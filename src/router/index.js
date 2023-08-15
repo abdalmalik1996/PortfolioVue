@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/app-home.vue'
 import About from '../components/app-about.vue'
-import Skills from '../components/app-Skills.vue'
+import Skills from '../components/app-skills.vue'
 import Work from '../components/app-work.vue'
 import Contact from '../components/app-contact.vue'
 const router = createRouter({
@@ -13,26 +13,25 @@ const router = createRouter({
       component: Home
     },
     {
-        path: '/about',
-        name: 'about',
-        component: About
-      },
-      {
-        path: '/skills',
-        name: 'skills',
-        component: Skills
-      },
-      {
-        path: '/work',
-        name: 'work',
-        component: Work
-      },
-      {
-        path: '/contact',
-        name: 'contact',
-        component: Contact
-      },
-    
+      path: '/about',
+      name: 'about',
+      component: About
+    },
+    {
+      path: '/skills',
+      name: 'skills',
+      component: Skills
+    },
+    {
+      path: '/work',
+      name: 'work',
+      component: Work
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
+    }
   ]
 })
 
