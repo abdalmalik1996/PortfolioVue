@@ -56,7 +56,7 @@
 
 <script>
 import FrontEnd from './skills/Skill-frontEnd.vue'
-import Design from './skills/skill-Design.vue'
+import Design from './skills/skill-design.vue'
 import BacEnd from './skills/skill-bacEnd.vue'
 
 export default {
