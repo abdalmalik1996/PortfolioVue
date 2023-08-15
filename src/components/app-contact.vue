@@ -10,7 +10,8 @@
             <h3 class="contact__card-title">Email</h3>
             <span class="contact__card-data">Abd.almalik96@gmail.com</span>
             <a class="contact__button" href="mailto:Abd.almalik96@gmail.com">
-              Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+              Write me 
+              <i class="uil uil-arrow-right contact__button-icon"></i>
             </a>
           </div>
 
@@ -19,16 +20,18 @@
             <h3 class="contact__card-title">Whatsapp</h3>
             <span class="contact__card-data">+963 967 287 756</span>
             <a class="contact__button" target="_blank" href="https://wa.me/+963967287756">
-              Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+              Write me 
+              <i class="uil uil-arrow-right contact__button-icon"></i>
             </a>
           </div>
 
           <div class="contact__card">
             <i class="uil uil-facebook-messenger messenger contact__card-icon"></i>
             <h3 class="contact__card-title">messenger</h3>
-            <span class="contact__card-data">Abd.almalik96@gmail.com</span>
+            <span class="contact__card-data">AbdAlmalikJakmery</span>
             <a class="contact__button" target="_blank" href="https://m.me/AbdAlmalikJakmery">
-              Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+              Write me 
+              <i class="uil uil-arrow-right contact__button-icon"></i>
             </a>
           </div>
         </div>

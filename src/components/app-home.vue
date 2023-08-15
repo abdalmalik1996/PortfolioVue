@@ -1,7 +1,7 @@
 <template>
   <section class="home" id="home">
     <div class="home__container container grid">
-      <div class="home__social">
+      <!-- <div class="home__social">
         <span class="home__social-follow">Follow ME</span>
         <div class="home__social-links">
           <a href="https://www.facebook.com" target="_blank" class="home__social-link">
@@ -11,50 +11,47 @@
             <i class="uil uil-instagram instagram"></i>
           </a>
         </div>
-      </div>
+      </div> -->
 
       <div class="home__data">
-    <h1 class="home__title">{{ title }}</h1>
-    <h3 class="home__subtitle">{{ subtitle }}</h3>
-    <p class="home__description">{{ description }}</p>
-    <router-link class="animate__animated animate__bounce button" to="about" v-if="showButton">
-      <i class="uil uil-user button__icon"></i>
-      More About Me
-    </router-link>
-  </div>
+        <h1 class="home__title">{{ title }}</h1>
+        <h3 class="home__subtitle">{{ subtitle }}</h3>
+        <p class="home__description">{{ description }}</p>
+        <router-link class="animate__animated animate__bounce button" to="about" v-if="showButton">
+          <i class="uil uil-user button__icon"></i>
+          More About Me
+        </router-link>
+      </div>
       <div class="my__info">
-        <div class="info__item">
+        <a class="info__item messenger" target="_blank" href="https://m.me/AbdAlmalikJakmery">
           <i class="uil uil-facebook-messenger messenger info__icon"></i>
-
           <div>
-            <h3 class="info__title">Messenger</h3>
+            <h4 class="info__title">Messenger</h4>
             <span class="info__subtitle">AbdAlmalikJakmery</span>
           </div>
-        </div>
-
-        <div class="info__item">
+        </a>
+        <a target="_blank" href="https://wa.me/+963967287756" class="info__item whatsapp">
           <i class="uil uil-whatsapp info__icon whatsapp"></i>
           <div>
-            <h3 class="info__title">Whatsapp</h3>
+            <h4 class="info__title">Whatsapp</h4>
             <span class="info__subtitle">+963-967287756</span>
           </div>
-        </div>
-
-        <div class="info__item">
+        </a>
+        <a  target="_blank" href="mailto:Abd.almalik96@gmail.com" class="info__item email">
           <i class="uil uil-envelope-edit email info__icon"></i>
 
           <div>
-            <h3 class="info__title">Email</h3>
+            <h4 class="info__title">Email</h4>
             <span class="info__subtitle">Abd.Almlaik@gmail.com</span>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import 'animate.css';
+import 'animate.css'
 
 export default {
   data() {
@@ -63,41 +60,41 @@ export default {
       title: '',
       subtitle: '',
       description: ''
-    };
+    }
   },
   mounted() {
-    this.animateText();
+    this.animateText()
   },
   methods: {
     async animateText() {
-      const titleText = "Hi, I am Abd Almalek";
-      const subtitleText = "Designer, Frontend developer";
-      const descriptionText = "I design and code beautifully simple things, and I love what I do.";
+      const titleText = 'Hi, I am Abd Almalek'
+      const subtitleText = 'Designer, Frontend developer'
+      const descriptionText = 'I design and code beautifully simple things, and I love what I do.'
 
-      await this.animateCharacters(titleText, 'title');
-      await this.animateCharacters(subtitleText, 'subtitle');
-      await this.animateCharacters(descriptionText, 'description');
+      await this.animateCharacters(titleText, 'title')
+      await this.animateCharacters(subtitleText, 'subtitle')
+      await this.animateCharacters(descriptionText, 'description')
 
-      this.showButton = true;
+      this.showButton = true
     },
     async animateCharacters(text, prop) {
-      let animatedText = '';
+      let animatedText = ''
 
       for (let i = 0; i < text.length; i++) {
-        animatedText += text[i];
-        this[prop] = animatedText;
-        await this.delay(100); // تأخير قصير بين كل حرف
+        animatedText += text[i]
+        this[prop] = animatedText
+        await this.delay(100) // تأخير قصير بين كل حرف
       }
     },
     delay(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
+      return new Promise((resolve) => setTimeout(resolve, ms))
     },
     handleButtonClick() {
-      console.log("Button clicked!");
+      console.log('Button clicked!')
       // أداء أي إجراءات إضافية هنا
     }
   }
-};
+}
 </script>
 
 <style scoped>
@@ -147,8 +144,6 @@ export default {
   transform: translateY(0.25rem); /*????????? */
 }
 
-
-
 .home__title {
   font-size: var(--biggest-font-size);
 }
@@ -175,6 +170,8 @@ export default {
 .info__item {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  color: white;
 }
 
 .info__title,

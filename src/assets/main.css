@@ -69,13 +69,13 @@ input{
 /* ==== icon */
 
 .whatsapp:hover{
-  color: #45c554;
+  color: #45c554 !important;
 }
 .messenger:hover{
   background: linear-gradient(40deg, #0099ff 9.4%,
   #a033ff 51.57%, #ff5280 84.07%, #ff7061 90.59%);
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent !important;
 }
 
 .facebook:hover{
@@ -88,7 +88,7 @@ input{
   color: transparent;
 }
 .email:hover{
-  color: #4593e5;
+  color: #4593e5 !important;
 }
 .html{
   color: #f06833;

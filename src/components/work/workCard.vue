@@ -16,16 +16,18 @@
           </span> -->
         </div>
 
-        <workModal/>
+        
       </div>
 </template>
 
 <script>
+
 export default {
     props : {
         card :{
             type :Object,
         }
     },
+    
 }
 </script>

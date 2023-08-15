@@ -3,8 +3,7 @@
     <h2 data-heading="My ProtFolio" class="section__title">Recent Works</h2>
 
     <div class="work__container container grid">
-      <Card @click="hanlder(card)" v-for="(card, index) in work" :key="index" :card="card"> </Card>
-
+      <workCard @click="hanlder(card)" v-for="(card, index) in work" :key="index" :card="card"> </workCard>
       <workModal v-if="this.TogglePopup" :data="this.popupData" />
     </div>
   </section>
@@ -12,7 +11,7 @@
 
 <script>
 import { data } from '../data'
-import Card from './work/workCard.vue'
+import workCard from './work/workCard.vue'
 import workModal from './work/workModal.vue'
 import { mapMutations, mapState } from 'vuex'
 export default {
@@ -24,7 +23,7 @@ export default {
     }
   },
   components: {
-    Card,
+    workCard,
     workModal
   },
   methods: {
