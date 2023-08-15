@@ -5,7 +5,7 @@ import Skills from '../components/app-skills.vue'
 import Work from '../components/app-work.vue'
 import Contact from '../components/app-contact.vue'
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('https://gentle-fairy-e72657.netlify.app/'),
   routes: [
     {
       path: '/',
