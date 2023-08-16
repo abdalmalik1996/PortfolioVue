@@ -197,7 +197,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
   }
   .home__data {
-    width: 300px;
+    width: 350px;
     line-height: 2;
   }
 
@@ -231,6 +231,9 @@ export default {
     flex-direction: column;
     row-gap: 0.25rem;
   }
+  .button{
+    padding: .25rem .9rem;
+  }
 }
 @media screen and (max-width: 350px) {
   .home__img {
@@ -246,8 +249,8 @@ export default {
 }
 @media (max-width: 300px) {
   .home__data {
-    width: 250px;
-    padding-left: 1rem;
+    width: 260px;
+    padding-left: none;
   }
 }
 </style>

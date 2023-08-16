@@ -73,7 +73,12 @@ export default {
     grid-template-columns: 1fr;
     row-gap: 2.5rem;
   }
-
+  .section__title::before{
+    margin-bottom: 15px;
+  }
+  .section__title{
+    margin-bottom: var(--mb-1-5);
+  }
   .about__img {
     width: 250px;
   }
@@ -109,8 +114,12 @@ export default {
 
 @media screen and (max-width: 350px) {
   .about__info {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 0.5rem;
+    display: none;
+  }
+  .btn-about,
+  .button {
+    padding: .25rem .9rem;
   }
 }
+
 </style>

@@ -29,7 +29,8 @@
               </li>
               <!-- <li>Role - <span>frontend</span></li> -->
               <li>
-                <a class="work_link" target="_blank" :href="data.link">view page: <i class="uil uil-arrow-right work__button-icon"></i
+                <a class="work_link" target="_blank" :href="data.link"
+                  >view page: <i class="uil uil-arrow-right work__button-icon"></i
                 ></a>
               </li>
             </ul>
@@ -90,7 +91,8 @@ export default {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 3rem;
-  height: 50vh;
+  height: 80vh;
+  max-height: 500px;
 }
 
 .potfolio__popup-clase {
