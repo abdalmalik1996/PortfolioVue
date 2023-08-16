@@ -18,9 +18,9 @@ export default defineConfig({
     // outDir: 'dist',
     // assetsDir: 'assets'
   },
-  redirects: {
-    from: '/*',
-    to: '/index.html',
-    status: 200
-  }
+  // redirects: {
+  //   from: '/*',
+  //   to: '/index.html',
+  //   status: 200
+  // }
 })
