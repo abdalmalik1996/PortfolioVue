@@ -12,15 +12,15 @@ export default defineConfig({
     }
   },
   build: {
-    command:"npm run build",
-    publish :"/build",
-    base :'/',
+    command: 'npm run build',
+    publish: '/build',
+    base: '/'
     // outDir: 'dist',
     // assetsDir: 'assets'
   },
-  // redirects:{
-  //   from :'/*',
-  //   to : '/index.html',
-  //   status : 200
-  // }
+  redirects: {
+    from: '/*',
+    to: '/index.html',
+    status: 200
+  }
 })
