@@ -15,12 +15,6 @@ export default defineConfig({
     command: 'npm run build',
     publish: '/build',
     base: '/'
-    // outDir: 'dist',
-    // assetsDir: 'assets'
   },
-  // redirects: {
-  //   from: '/*',
-  //   to: '/index.html',
-  //   status: 200
-  // }
+
 })
