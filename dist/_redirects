@@ -1,5 +1,1 @@
-# Redirects from what the browser requests to what we serve
-/home                /
-/about               /about
-/work                /work
-/contact             /contact
+/best-pets/dogs  /best-pets/cats.html 200!
