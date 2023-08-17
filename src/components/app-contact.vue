@@ -62,7 +62,7 @@
             <span>Massage</span>
           </div>
           <button type="submit" class="button">
-            <i class="uil uil-navigator button__icon"></i>
+            <img src="@/assets/icons/paper-plane.svg" alt="">
             Send Message
           </button>
         </form>

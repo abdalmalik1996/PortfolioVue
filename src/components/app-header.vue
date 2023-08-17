@@ -1,7 +1,7 @@
 <template>
   <div class="header">
-    <div @click="NAV_TOGGLE()" class="nav__toggle" id="nav-toggle">
-      <i class="uil uil-bars"></i>
+    <div @click="NAV_TOGGLE()" class="nav__toggle" id="nav-toggle">      
+      <font-awesome-icon icon="fa-solid fa-bars" />
     </div>
     <aside :class="{ 'show-sidebar': navToggle }" class="sidebar" id="sidebar">
       <nav class="nav">
@@ -61,16 +61,19 @@
           </div>
         </div>
         <div class="btn__share">
-          <i class="uil uil-share-alt social__share"></i>
+          <font-awesome-icon icon="fa-solid fa-share-nodes" style="color: #e1094a; font-size: 1.8rem;" />
+
+        
         </div>
         <div @click="NAV_TOGGLE()" class="nav__close" id="nav-close">
-          <i class="uil uil-times"></i>
+          <font-awesome-icon icon="fa-solid fa-xmark" style="color: #e1094a;" />
         </div>
       </nav>
     </aside>
   </div>
 </template>
 <script>
+
 import { mapState, mapMutations } from 'vuex'
 export default {
   methods: {
@@ -146,9 +149,7 @@ export default {
   right: 0;
   text-align: center;
 }
-.social__share {
-  font-size: 1.8rem;
-}
+
 
 .nav__toggle {
   height: 32px;

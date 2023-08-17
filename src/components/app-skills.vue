@@ -9,12 +9,12 @@
           :class="dataTarget === 'FrontEnd' ? 'skills__active' : ''"
           @click="dataTarget = 'FrontEnd'"
         >
-          <i class="uil uil-brackets-curly skills__icon"></i>
+          <img class="skills__icon" src="../assets/icons/brackets-curly.svg" alt="" />
           <div>
             <h1 class="skills__title">Frontend developer</h1>
             <span class="skills__subtitle">More than 4 years</span>
           </div>
-          <i class="uil uil-angle-down skills-arrow"></i>
+          <font-awesome-icon icon="fa-solid fa-angle-down" class="skills-arrow" />
         </div>
 
         <div
@@ -22,13 +22,12 @@
           :class="dataTarget === 'Design' ? 'skills__active' : ''"
           @click="dataTarget = 'Design'"
         >
-          <i class="uil uil-swatchbook skills__icon"></i>
-
+        <font-awesome-icon icon="fa-solid fa-swatchbook" class="skills__icon" />
           <div>
             <h1 class="skills__title">UI / UX design</h1>
             <span class="skills__subtitle">More than 5 yers</span>
           </div>
-          <i class="uil uil-angle-down skills-arrow"></i>
+          <font-awesome-icon icon="fa-solid fa-angle-down" class="skills-arrow" />
         </div>
 
         <div
@@ -36,12 +35,12 @@
           :class="dataTarget === 'BacEnd' ? 'skills__active' : ''"
           @click="dataTarget = 'BacEnd'"
         >
-          <i class="uil uil-server-network skills__icon"></i>
+        <font-awesome-icon icon="fa-solid fa-toolbox" class="skills__icon" />
           <div>
             <h1 class="skills__title">Development Tools</h1>
             <span class="skills__subtitle">More than 2 years</span>
           </div>
-          <i class="uil uil-angle-down skills-arrow"></i>
+          <font-awesome-icon icon="fa-solid fa-angle-down" class="skills-arrow" />
         </div>
       </div>
 
@@ -148,6 +147,9 @@ export default {
 }
 .skills__content {
   height: 310.391px;
+}
+.skills_icon {
+  margin-right: 5px;
 }
 @media screen and (max-width: 1024px) {
   .skills__container {

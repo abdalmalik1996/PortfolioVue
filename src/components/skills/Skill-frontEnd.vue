@@ -4,7 +4,10 @@
       <!-- html -->
       <div class="skills__data">
         <div class="skills__titles">
-          <h3 class="skills__name"><i class="uil uil-html5 html"></i>HTML</h3>
+          <h3 class="skills__name">
+            <font-awesome-icon icon="fa-brands fa-html5" class="html skills_icon" />
+            HTML
+          </h3>
           <span class="skills__number">90%</span>
         </div>
         <div class="skills__bar">
@@ -14,7 +17,7 @@
       <!-- css -->
       <div class="skills__data">
         <div class="skills__titles">
-          <h3 class="skills__name"><i class="uil uil-css3-simple css"></i>CSS</h3>
+          <h3 class="skills__name"><font-awesome-icon icon="fa-brands fa-css3" class="css skills_icon" />CSS</h3>
           <span class="skills__number">80%</span>
         </div>
         <div class="skills__bar">
@@ -24,7 +27,7 @@
       <!-- javaScript -->
       <div class="skills__data">
         <div class="skills__titles">
-          <h3 class="skills__name"><i class="uil uil-java-script js"></i>JavaScript</h3>
+          <h3 class="skills__name"><font-awesome-icon icon="fa-brands fa-node-js" class="js skills_icon" />JavaScript</h3>
           <span class="skills__number">80%</span>
         </div>
         <div class="skills__bar">
@@ -34,7 +37,7 @@
       <!-- React -->
       <div class="skills__data">
         <div class="skills__titles">
-          <h3 class="skills__name"><i class="uil uil-vuejs vue"></i>Vue</h3>
+          <h3 class="skills__name"><font-awesome-icon icon="fa-brands fa-vuejs" class="vue skills_icon" />Vue</h3>
           <span class="skills__number">75%</span>
         </div>
         <div class="skills__bar">

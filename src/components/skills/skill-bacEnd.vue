@@ -4,7 +4,7 @@
       <!-- html -->
       <div class="skills__data">
         <div class="skills__titles">
-          <h3 class="skills__name"><i class="fa-brands fa-bootstrap bootstrap"></i>Bootstrap</h3>
+          <h3 class="skills__name"><i class="fa-brands fa-bootstrap bootstrap skills_icon"></i>Bootstrap</h3>
           <span class="skills__number">50%</span>
         </div>
         <div class="skills__bar">
@@ -22,7 +22,9 @@
       </div>
       <div class="skills__data">
         <div class="skills__titles">
-          <h3 class="skills__name"><i class="uil uil-github"></i>Github</h3>
+          <h3 class="skills__name">
+            <font-awesome-icon icon="fa-brands fa-github" class="skills_icon" style="color: #ffffff" /> Github
+          </h3>
           <span class="skills__number">60%</span>
         </div>
         <div class="skills__bar">
@@ -32,7 +34,8 @@
       <div class="skills__data">
         <div class="skills__titles">
           <h3 class="skills__name">
-            <img src="@/assets/icons/nodejs.svg" alt=""></h3>
+            <img src="@/assets/icons/nodejs.svg" alt="" />
+          </h3>
           <span class="skills__number">70%</span>
         </div>
         <div class="skills__bar">

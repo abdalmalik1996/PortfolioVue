@@ -18,27 +18,28 @@
         <h3 class="home__subtitle">{{ subtitle }}</h3>
         <p class="home__description">{{ description }}</p>
         <router-link class="animate__animated animate__bounce button" to="about" v-if="showButton">
-          <i class="uil uil-user button__icon"></i>
+          <font-awesome-icon icon="fa-solid fa-user" style="font-size: 1.25rem" />
           More About Me
         </router-link>
       </div>
       <div class="my__info">
         <a class="info__item messenger" target="_blank" href="https://m.me/AbdAlmalikJakmery">
-          <i class="uil uil-facebook-messenger messenger info__icon"></i>
+          <font-awesome-icon icon="fa-brands fa-facebook-messenger" class="info__icon" />
+
           <div>
             <h4 class="info__title">Messenger</h4>
             <span class="info__subtitle">AbdAlmalikJakmery</span>
           </div>
         </a>
         <a target="_blank" href="https://wa.me/+963967287756" class="info__item whatsapp">
-          <i class="uil uil-whatsapp info__icon whatsapp"></i>
+          <font-awesome-icon icon="fa-brands fa-whatsapp" class="info__icon whatsapp" />
           <div>
             <h4 class="info__title">Whatsapp</h4>
             <span class="info__subtitle">+963-967287756</span>
           </div>
         </a>
-        <a  target="_blank" href="mailto:Abd.almalik96@gmail.com" class="info__item email">
-          <i class="uil uil-envelope-edit email info__icon"></i>
+        <a target="_blank" href="mailto:Abd.almalik96@gmail.com" class="info__item email">
+          <font-awesome-icon class="info__icon" icon="fa-solid fa-envelope" />
 
           <div>
             <h4 class="info__title">Email</h4>
@@ -231,8 +232,8 @@ export default {
     flex-direction: column;
     row-gap: 0.25rem;
   }
-  .button{
-    padding: .25rem .9rem;
+  .button {
+    padding: 0.25rem 0.9rem;
   }
 }
 @media screen and (max-width: 350px) {

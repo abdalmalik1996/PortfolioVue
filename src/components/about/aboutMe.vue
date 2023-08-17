@@ -1,45 +1,41 @@
 <template>
-    <div class="about_container container grid">
-      <img src="@/assets/images/hd.png" alt="" class="about__img" />
+  <div class="about_container container grid">
+    <img src="@/assets/images/hd.png" alt="" class="about__img" />
 
-      <div class="about__data">
-        <h3 class="about__heading">Hi,i'm Abd Almalek Jakmery, Based in Syria</h3>
-        <p class="about__description">
-          I like to craft solid and scalable frontend products with great user experiences.
-        </p>
+    <div class="about__data">
+      <h3 class="about__heading">Hi,i'm Abd Almalek Jakmery, Based in Syria</h3>
+      <p class="about__description">
+        I like to craft solid and scalable frontend products with great user experiences.
+      </p>
 
-        <div class="about__info grid">
-          <div class="about__box">
-            <i class="about__icon uil uil-award"></i>
-            <h3 class="about__title">Experience</h3>
-            <span class="about__subtitle"> 2 years</span>
-          </div>
-
-          <div class="about__box">
-            <i class="about__icon uil uil-suitcase-alt"></i>
-            <h3 class="about__title">Compleated</h3>
-            <span class="about__subtitle">8 projects </span>
-          </div>
-          <div class="about__box">
-            <i class="about__icon uil uil-headphones"></i>
-            <h3 class="about__title">Support</h3>
-            <span class="about__subtitle">Online 24/7</span>
-          </div>
+      <div class="about__info grid">
+        <div class="about__box">
+          <font-awesome-icon icon="fa-solid fa-award" class="about__icon" />
+          <h3 class="about__title">Experience</h3>
+          <span class="about__subtitle"> 2 years</span>
         </div>
-        <router-link class="button" to="contact">
-          <i class="uil uil-navigator button__icon"></i>
-          contact Me
-        </router-link>
-        
+
+        <div class="about__box">
+          <font-awesome-icon icon="fa-solid fa-suitcase" class="about__icon" />
+          <h3 class="about__title">Compleated</h3>
+          <span class="about__subtitle">8 projects </span>
+        </div>
+        <div class="about__box">
+          <font-awesome-icon icon="fa-solid fa-headphones" class="about__icon" />
+          <h3 class="about__title">Support</h3>
+          <span class="about__subtitle">Online 24/7</span>
+        </div>
       </div>
+      <router-link class="button" to="contact">
+        <img src="@/assets/icons/paper-plane.svg" alt="">
+        contact Me
+      </router-link>
     </div>
+  </div>
 </template>
-<script> 
-export default {
-
-}
+<script>
+export default {}
 </script>
-
 
 <style>
 .about_container {

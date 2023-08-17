@@ -72,10 +72,10 @@ input{
   color: #45c554 !important;
 }
 .messenger:hover{
-  background: linear-gradient(40deg, #0099ff 9.4%,
+  /* background: linear-gradient(40deg, #0099ff 9.4%,
   #a033ff 51.57%, #ff5280 84.07%, #ff7061 90.59%);
-  -webkit-background-clip: text;
-  color: transparent !important;
+  -webkit-background-clip: text; */
+  color: #046ee5 !important;
 }
 
 .facebook:hover{
@@ -106,10 +106,11 @@ color: #d6ba31;
   color: #bf4080;
 }
 .vue {
-  background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+  /* background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
   -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-transform: lowercase;
+    text-transform: lowercase; */
+    color: #42d392;
 }
 .api{
   color: rgb(170, 215, 66);
