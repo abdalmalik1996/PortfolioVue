@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div @click="NAV_TOGGLE()" class="nav__toggle" id="nav-toggle">      
+    <div @click="NAV_TOGGLE()" class="nav__toggle" id="nav-toggle">
       <font-awesome-icon icon="fa-solid fa-bars" />
     </div>
     <aside :class="{ 'show-sidebar': navToggle }" class="sidebar" id="sidebar">
@@ -60,21 +60,22 @@
             </ul>
           </div>
         </div>
-        <div class="btn__share">
-          <font-awesome-icon icon="fa-solid fa-share-nodes" style="color: #e1094a; font-size: 1.8rem;" />
-
-        
-        </div>
+        <!-- <div @click="TOGGLE_SHARE()" class="btn__share">
+          <font-awesome-icon
+            icon="fa-solid fa-share-nodes"
+            style="color: #e1094a; font-size: 1.8rem"
+          />
+        </div> -->
         <div @click="NAV_TOGGLE()" class="nav__close" id="nav-close">
-          <font-awesome-icon icon="fa-solid fa-xmark" style="color: #e1094a;" />
+          <font-awesome-icon icon="fa-solid fa-xmark" style="color: #e1094a" />
         </div>
       </nav>
     </aside>
   </div>
 </template>
 <script>
-
 import { mapState, mapMutations } from 'vuex'
+
 export default {
   methods: {
     ...mapMutations(['NAV_TOGGLE']),
@@ -148,8 +149,8 @@ export default {
   left: 0;
   right: 0;
   text-align: center;
+  cursor: pointer;
 }
-
 
 .nav__toggle {
   height: 32px;

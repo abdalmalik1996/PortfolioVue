@@ -3,16 +3,16 @@
     <h2 data-heading="My ProtFolio" class="section__title">Recent Works</h2>
 
     <div class="work__container container grid">
-      <workCard @click="hanlder(card)" v-for="(card, index) in work" :key="index" :card="card"> </workCard>
+      <workCard @click="hanlder(card)" v-for="(card, index) in work" :key="index" :card="card">
+      </workCard>
       <workModal v-if="this.TogglePopup" :data="this.popupData" />
     </div>
   </section>
 </template>
 
 <script>
-
-import workCard from './work/workCard.vue'
-import workModal from './work/workModal.vue'
+import workCard from './work/workcard.vue'
+import workModal from './work/workmodal.vue'
 import { mapMutations, mapState } from 'vuex'
 export default {
   data() {
@@ -28,14 +28,14 @@ export default {
   },
   methods: {
     ...mapMutations(['TOGGLE_POPUP']),
-      hanlder(card) {
+    hanlder(card) {
       this.popupData = card
       this.TOGGLE_POPUP()
     }
   },
   computed: {
     ...mapState(['TogglePopup'])
-  },
+  }
 }
 </script>
 
