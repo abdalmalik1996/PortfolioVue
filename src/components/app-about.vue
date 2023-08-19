@@ -8,7 +8,7 @@
       >
         About Me
       </button>
-      <button
+      <button 
         class="btn-about"
         :class="dataTarget === 'qualification' ? 'active' : ''"
         @click="dataTarget = 'qualification'"

@@ -7,7 +7,7 @@
         <div class="work__text">
           <h3 class="work__title">{{ card.title }}</h3>
           <p class="work__technologies">
-   
+ 
             <span v-for="(technologie,index)  in card.technologies" :class="technologie" :key="index">{{ technologie.toUpperCase() + ' ' }}</span>
           </p>
           <!-- <span class="work__button"

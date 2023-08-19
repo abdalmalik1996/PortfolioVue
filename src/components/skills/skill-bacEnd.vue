@@ -4,7 +4,10 @@
       <!-- html -->
       <div class="skills__data">
         <div class="skills__titles">
-          <h3 class="skills__name"><i class="fa-brands fa-bootstrap bootstrap skills_icon"></i>Bootstrap</h3>
+          <h3 class="skills__name">
+            <font-awesome-icon icon="fa-brands fa-bootstrap" class="skills_icon bootstrap" />
+            Bootstrap
+          </h3>
           <span class="skills__number">50%</span>
         </div>
         <div class="skills__bar">
@@ -23,7 +26,12 @@
       <div class="skills__data">
         <div class="skills__titles">
           <h3 class="skills__name">
-            <font-awesome-icon icon="fa-brands fa-github" class="skills_icon" style="color: #ffffff" /> Github
+            <font-awesome-icon
+              icon="fa-brands fa-github"
+              class="skills_icon"
+              style="color: #ffffff"
+            />
+            Github
           </h3>
           <span class="skills__number">60%</span>
         </div>

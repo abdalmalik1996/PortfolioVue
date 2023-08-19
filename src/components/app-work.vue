@@ -10,14 +10,14 @@
 </template>
 
 <script>
-import { data } from '../data'
+
 import workCard from './work/workCard.vue'
 import workModal from './work/workModal.vue'
 import { mapMutations, mapState } from 'vuex'
 export default {
   data() {
     return {
-      work: data.work,
+      work: this.$store.state.workData,
       popupData: null,
       popupAcive: false
     }
@@ -28,14 +28,14 @@ export default {
   },
   methods: {
     ...mapMutations(['TOGGLE_POPUP']),
-    hanlder(card) {
+      hanlder(card) {
       this.popupData = card
       this.TOGGLE_POPUP()
     }
   },
   computed: {
     ...mapState(['TogglePopup'])
-  }
+  },
 }
 </script>
 

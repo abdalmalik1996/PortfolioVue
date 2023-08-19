@@ -1,7 +1,8 @@
 <template>
   <div class="certificate__popup">
     <div class="certificate__popup-inner">
-      <span class="certificate__popup-close" @click="colsecert"><i class="uil uil-times"></i></span>
+      <span class="certificate__popup-close" @click="colsecert"
+        ><font-awesome-icon icon="fa-solid fa-xmark"/></span>
       <h1 class="certificate__popup-title">{{ this.cretData.title }}</h1>
       <img :src="this.cretData.img" alt="" class="certificate__img__popup" />
       <p class="description__popup">

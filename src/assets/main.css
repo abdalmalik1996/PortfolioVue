@@ -1,12 +1,12 @@
 /* ========= BASE ======== */
 @import './base.css';
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-main{
+main {
   margin-left: 100px;
 }
 /* html {
@@ -20,21 +20,23 @@ input {
   font-size: var(--normal-font-size);
 }
 
-body{
+body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-bold);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: blue;
 }
@@ -44,23 +46,22 @@ img {
   height: auto;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
 button,
-input{
+input {
   border: none;
-  outline: none;  
+  outline: none;
 }
 
 /* ============LAYOUT======== */
 .container {
   max-width: 1250px;
   margin-left: auto;
-  margin-right: auto ;
+  margin-right: auto;
 }
-
 
 .grid {
   display: grid;
@@ -68,41 +69,40 @@ input{
 
 /* ==== icon */
 
-.whatsapp:hover{
+.whatsapp:hover {
   color: #45c554 !important;
 }
-.messenger:hover{
+.messenger:hover {
   /* background: linear-gradient(40deg, #0099ff 9.4%,
   #a033ff 51.57%, #ff5280 84.07%, #ff7061 90.59%);
   -webkit-background-clip: text; */
   color: #046ee5 !important;
 }
 
-.facebook:hover{
+.facebook:hover {
   color: #046ee5;
 }
-.instagram:hover{
-  background: linear-gradient(#0099ff 1.4%,
-  #a033ff 51.57%, #ff5280 84.07%, #ff7061 90.59%);
+.instagram:hover {
+  background: linear-gradient(#0099ff 1.4%, #a033ff 51.57%, #ff5280 84.07%, #ff7061 90.59%);
   -webkit-background-clip: text;
   color: transparent;
 }
-.email:hover{
+.email:hover {
   color: #4593e5 !important;
 }
-.html{
+.html {
   color: #f06833;
 }
-.css{
+.css {
   color: #1872b9;
 }
-.js{
-color: #d6ba31;
+.js {
+  color: #d6ba31;
 }
-.bootstrap{
+.bootstrap {
   color: #7210f5;
 }
-.sass{
+.sass {
   color: #bf4080;
 }
 .vue {
@@ -110,32 +110,32 @@ color: #d6ba31;
   -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: lowercase; */
-    color: #42d392;
+  color: #42d392;
 }
-.api{
+.api {
   color: rgb(170, 215, 66);
 }
-.figma{
+.figma {
   width: 15px;
 }
-.react{
+.react {
   color: #61dafb;
   animation: rotete 10s linear infinite;
 }
-.tailwind{
-  color: rgb(14 ,165 ,233);
+.tailwind {
+  color: rgb(14, 165, 233);
 }
 @keyframes rotete {
   0% {
--webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   100% {
-      -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 
 /* REUSABLE CSS CLASSES */
-.section{
+.section {
   /* padding: 6.5rem 0 2rem; */
   display: flex;
   height: 100vh;
@@ -144,17 +144,17 @@ color: #d6ba31;
 }
 .section_flex {
   height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .section__title {
   text-align: center;
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-3);
 }
-.section__title::before{
+.section__title::before {
   content: attr(data-heading);
   display: block;
   font-size: var(--normal-font-size);
@@ -162,22 +162,22 @@ color: #d6ba31;
   color: var(--skin-color);
 }
 /* ====== buttons  ========*/
-.button{
-  display: inline-flex;  /*????????? */
+.button {
+  display: inline-flex; /*????????? */
   align-items: center;
-  column-gap: .5rem; /*????????? */
+  column-gap: 0.5rem; /*????????? */
   background-color: var(--skin-color);
   color: var(--title-color);
-  padding: .75rem 1.4rem;
-  border-radius: .25rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.25rem;
   font-weight: var(--font-meidum);
   position: relative;
   z-index: 1;
   font-size: var(--font-meidum);
 }
-.button::after{
+.button::after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   top: 0;
   width: 100%;
@@ -185,48 +185,48 @@ color: #d6ba31;
   background-color: #343a40;
   z-index: -1;
   transform-origin: center; /*????????? */
-  transform: scale(0);  /*????????? */
-  border-radius: .25rem;
-  transition: .5s; /*????????? */
+  transform: scale(0); /*????????? */
+  border-radius: 0.25rem;
+  transition: 0.5s; /*????????? */
 }
 .button:hover::after {
-transform: scale(1);
+  transform: scale(1);
 }
-.button__icon{
+.button__icon {
   font-size: 1.25rem;
 }
 
 /* ======== SCROLL BAR ========= */
 
 ::-webkit-scrollbar {
-  width: .1rem;
+  width: 0.1rem;
   background-color: rgb(32, 32, 32);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--skin-color) ;
+  background-color: var(--skin-color);
   border-radius: 1rem;
 }
 @media screen and (max-width: 1408px) {
-  .container{
-      margin-left: var(--mb-2-5);
-      margin-right: var(--mb-2-5);
+  .container {
+    margin-left: var(--mb-2-5);
+    margin-right: var(--mb-2-5);
   }
 }
 
 @media screen and (max-width: 1024px) {
   .container {
-      margin-left: var(--mb-1-5);
-      margin-right: var(--mb-1-5);
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
   }
-  main{
+  main {
     margin-left: 0;
+  }
 }
-}
-@media screen and (max-width: 350px)  {
+@media screen and (max-width: 350px) {
   .container {
-      margin-left: var(--mb-0-75);
-      margin-right: var(--mb-0-75);
+    margin-left: var(--mb-0-75);
+    margin-right: var(--mb-0-75);
   }
 }

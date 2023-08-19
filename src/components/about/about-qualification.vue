@@ -31,7 +31,6 @@
               Responsive Web Design
               <span class="timeline__button" @click="test('design')"
                 >View
-
                 <font-awesome-icon icon="fa-solid fa-arrow-right" class="timeline__button-icon" />
               </span>
             </p>

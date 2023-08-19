@@ -6,32 +6,52 @@
       <div class="contact__contact">
         <div class="contact__info">
           <div class="contact__card">
-            <i class="uil uil-envelope-edit email contact__card-icon"></i>
+            <font-awesome-icon
+              icon="fa-solid fa-envelope"
+              class=" contact__card-icon"
+            />
             <h3 class="contact__card-title">Email</h3>
             <span class="contact__card-data">Abd.almalik96@gmail.com</span>
             <a class="contact__button" href="mailto:Abd.almalik96@gmail.com">
-              Write me 
-              <i class="uil uil-arrow-right contact__button-icon"></i>
+              Write me
+              <font-awesome-icon
+              icon="fa-solid fa-arrow-right"
+              class=" contact__button-icon"
+            />
             </a>
           </div>
 
           <div class="contact__card">
-            <i class="uil uil-whatsapp whatsapp contact__card-icon green"></i>
+            <font-awesome-icon
+              icon="fa-brands fa-whatsapp"
+              class=" contact__card-icon"
+            />
+  
             <h3 class="contact__card-title">Whatsapp</h3>
             <span class="contact__card-data">+963 967 287 756</span>
             <a class="contact__button" target="_blank" href="https://wa.me/+963967287756">
-              Write me 
-              <i class="uil uil-arrow-right contact__button-icon"></i>
+              Write me
+              <font-awesome-icon
+              icon="fa-solid fa-arrow-right"
+              class=" contact__button-icon"
+            />
             </a>
           </div>
 
-          <div class="contact__card">
-            <i class="uil uil-facebook-messenger messenger contact__card-icon"></i>
+          <div class="contact__card ">
+            <font-awesome-icon
+              icon="fa-brands fa-facebook-messenger"
+              class=" contact__card-icon"
+            />
+
             <h3 class="contact__card-title">messenger</h3>
             <span class="contact__card-data">AbdAlmalikJakmery</span>
             <a class="contact__button" target="_blank" href="https://m.me/AbdAlmalikJakmery">
-              Write me 
-              <i class="uil uil-arrow-right contact__button-icon"></i>
+              Write me
+              <font-awesome-icon
+              icon="fa-solid fa-arrow-right"
+              class=" contact__button-icon"
+            />
             </a>
           </div>
         </div>
@@ -57,12 +77,18 @@
           </div>
 
           <div class="input__container textarea">
-            <textarea name="" id="" class="input" @focus="handleFukcs" @blur="handleBlur"></textarea>
+            <textarea
+              name=""
+              id=""
+              class="input"
+              @focus="handleFukcs"
+              @blur="handleBlur"
+            ></textarea>
             <label for="">Massage</label>
             <span>Massage</span>
           </div>
           <button type="submit" class="button">
-            <img src="@/assets/icons/paper-plane.svg" alt="">
+            <img src="@/assets/icons/paper-plane.svg" alt="" />
             Send Message
           </button>
         </form>
@@ -75,15 +101,12 @@
 export default {
   methods: {
     handleBlur(event) {
-        if (event.target.value =='') {
-      event.target.parentNode.classList.remove('focus')
-            
-        }
-
+      if (event.target.value == '') {
+        event.target.parentNode.classList.remove('focus')
+      }
     },
     handleFukcs(event) {
       event.target.parentNode.classList.add('focus')
-
     }
   }
 }
@@ -138,7 +161,7 @@ export default {
 }
 
 .contact__button-icon {
-  font-size: 1rem;
+  font-size: .9rem;
   transition: 0.3s;
 }
 
@@ -237,26 +260,26 @@ export default {
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  .section__title{
+  .section__title {
     margin-bottom: var(--mb-0-5);
   }
-  .input__container{
-    margin-bottom: .5rem;
+  .input__container {
+    margin-bottom: 0.5rem;
   }
   .contact__container {
     grid-template-columns: 360px;
-    row-gap: .5rem;
+    row-gap: 0.5rem;
   }
-  .contact__info{
-    row-gap: .5rem;
+  .contact__info {
+    row-gap: 0.5rem;
   }
-  .contact__card{
+  .contact__card {
     padding: 0;
   }
-  .input{
+  .input {
     font-size: var(--saml-font-size);
   }
-  .textarea .input{
+  .textarea .input {
     min-height: 100px;
   }
 }

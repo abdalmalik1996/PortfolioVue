@@ -6,6 +6,7 @@ export default createStore({
         navToggle :false,
         certToggle :false,
         cretData :null,
+        workData : data.work
     },
     mutations: {
         TOGGLE_POPUP(state) {

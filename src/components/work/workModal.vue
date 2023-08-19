@@ -3,8 +3,8 @@
     <div class="potfolio__popup-inner">
       <div class="potfolio__popup-content grid">
         <span class="potfolio__popup-clase" @click="closeWorkModal"
-          ><i class="uil uil-times"></i
-        ></span>
+          ><font-awesome-icon icon="fa-solid fa-xmark"
+        /></span>
         <div v-if="data.imgscrol" class="pp__thumbnail-scroll">
           <img :src="data.imgscrol" alt="" class="pottfolio__popup-img_scroll" />
         </div>
@@ -30,8 +30,9 @@
               <!-- <li>Role - <span>frontend</span></li> -->
               <li>
                 <a class="work_link" target="_blank" :href="data.link"
-                  >view page: <i class="uil uil-arrow-right work__button-icon"></i
-                ></a>
+                  >view page:
+                  <font-awesome-icon icon="fa-solid fa-arrow-right" class="work__button-icon" />
+                </a> 
               </li>
             </ul>
           </div>
