@@ -8,7 +8,7 @@
       >
         About Me
       </button>
-      <button 
+      <button
         class="btn-about"
         :class="dataTarget === 'qualification' ? 'active' : ''"
         @click="dataTarget = 'qualification'"
@@ -17,9 +17,13 @@
       </button>
     </div>
     <keep-alive>
-      <div class="s">
+      <transition
+        enter-active-class="animate__animated animate__zoomInDown"
+        leave-active-class="animate__animated animate__zoomOutDown"
+        mode="out-in"
+      >
         <component :is="dataTarget"></component>
-      </div>
+      </transition>
     </keep-alive>
   </section>
 </template>
@@ -73,10 +77,10 @@ export default {
     grid-template-columns: 1fr;
     row-gap: 2.5rem;
   }
-  .section__title::before{
+  .section__title::before {
     margin-bottom: 15px;
   }
-  .section__title{
+  .section__title {
     margin-bottom: var(--mb-1-5);
   }
   .about__img {
@@ -118,8 +122,7 @@ export default {
   }
   .btn-about,
   .button {
-    padding: .25rem .9rem;
+    padding: 0.25rem 0.9rem;
   }
 }
-
 </style>

@@ -5,14 +5,20 @@
     <div class="work__container container grid">
       <workCard @click="hanlder(card)" v-for="(card, index) in work" :key="index" :card="card">
       </workCard>
-      <workModal v-if="this.TogglePopup" :data="this.popupData" />
+      <transition
+        enter-active-class="animate__animated animate__fadeIn"
+        leave-active-class="animate__animated animate__fadeOut"
+        mode="out-in"
+      >
+        <workModal v-if="this.TogglePopup" :data="this.popupData" />
+      </transition>
     </div>
   </section>
 </template>
 
 <script>
 import workCard from './work/workcard.vue'
-import workModal from './work/workmodal.vue'
+import workModal from './work/workModal.vue'
 import { mapMutations, mapState } from 'vuex'
 export default {
   data() {

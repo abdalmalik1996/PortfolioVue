@@ -3,11 +3,15 @@ import { data } from '../data'
 export default createStore({
   state: {
     TogglePopup: false,
-
     navToggle: false,
     certToggle: false,
     cretData: null,
-    workData: data.work
+    workData: data.work,
+    skillData: data.skill,
+    skillsTarget: {
+      name: 'frontEnd',
+      data: data.skill.frontEnd
+    }
   },
   mutations: {
     TOGGLE_POPUP(state) {
@@ -30,6 +34,20 @@ export default createStore({
       if (payload === 'design') {
         state.cretData = data.certificate[payload]
         commit('CERT_TOGGLE')
+      }
+    },
+    SKILL_DATA({ state }, payload) {
+      if (payload === 'frontEnd') {
+        state.skillsTarget.name = 'frontEnd'
+        state.skillsTarget.data = state.skillData.frontEnd
+      }
+      if (payload === 'design') {
+        state.skillsTarget.name = 'design'
+        state.skillsTarget.data = state.skillData.design
+      }
+      if (payload === 'tool') {
+        state.skillsTarget.name = 'tool'
+        state.skillsTarget.data = state.skillData.tool
       }
     }
   }

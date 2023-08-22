@@ -9,9 +9,13 @@ import blogr from '@/assets/images/Blogr.jpg'
 import blogr_scrol from '@/assets/images/blogr-scrol.jpg'
 import clipboard from '@/assets/images/Clipboard.jpg'
 import Clipboard_scroll from '@/assets/images/Clipboard-mobile.jpg'
-
 import javascript from '@/assets/images/javascript.png'
 import web_design from '@/assets/images/web-design.png'
+
+import figma from '@/assets/icons/figma.svg'
+import adobeXd from '@/assets/icons/adobeXd.svg'
+import tailwind from '@/assets/icons/tailwind.svg'
+import nodejs from '@/assets/icons/nodejs.svg'
 
 export const data = {
   work: {
@@ -102,5 +106,63 @@ export const data = {
       img: web_design,
       link: 'https://freecodecamp.org/certification/AbdAlmalik/responsive-web-design'
     }
+  },
+  skill: {
+    frontEnd: [
+      {
+        name: 'html',
+        icon: 'fa-brands fa-html5',
+        number: '90'
+      },
+      {
+        name: 'css',
+        icon: 'fa-brands fa-css3',
+        number: '80'
+      },
+      {
+        name: 'JavaScript',
+        icon: 'fa-brands fa-node-js',
+        number: '80'
+      },
+      {
+        name: 'vue',
+        icon: 'fa-brands fa-vuejs',
+        number: '75'
+      }
+    ],
+    design: [
+      {
+        name: 'figma',
+        img: figma,
+        number: '50'
+      },
+      {
+        name: 'adobe XD',
+        img: adobeXd,
+        number: '40'
+      }
+    ],
+    tool: [
+      {
+        name: 'bootstrap',
+        icon: 'fa-brands fa-bootstrap',
+        number: '50'
+      },
+      {
+        namehid: 'tailwind',
+        img: tailwind,
+        number: '40'
+      },
+      {
+        name: 'github',
+        icon: 'fa-brands fa-github',
+        number: '60'
+      },
+      {
+        namehid: 'nodejs',
+        img: nodejs,
+        number: '70'
+      }
+    ]
   }
 }

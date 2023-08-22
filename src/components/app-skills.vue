@@ -6,8 +6,8 @@
       <div class="skill__tabs">
         <div
           class="skills__header"
-          :class="dataTarget === 'FrontEnd' ? 'skills__active' : ''"
-          @click="dataTarget = 'FrontEnd'"
+          :class="skillsTarget.name === 'frontEnd' ? 'skills__active' : ''"
+          @click="this.SKILL_DATA('frontEnd')"
         >
           <img class="skills__icon" src="../assets/icons/brackets-curly.svg" alt="" />
           <div>
@@ -16,26 +16,24 @@
           </div>
           <font-awesome-icon icon="fa-solid fa-angle-down" class="skills-arrow" />
         </div>
-
         <div
           class="skills__header"
-          :class="dataTarget === 'Design' ? 'skills__active' : ''"
-          @click="dataTarget = 'Design'"
+          :class="skillsTarget.name === 'design' ? 'skills__active' : ''"
+          @click="this.SKILL_DATA('design')"
         >
-        <font-awesome-icon icon="fa-solid fa-swatchbook" class="skills__icon" />
+          <font-awesome-icon icon="fa-solid fa-swatchbook" class="skills__icon" />
           <div>
             <h1 class="skills__title">UI / UX design</h1>
             <span class="skills__subtitle">More than 5 yers</span>
           </div>
           <font-awesome-icon icon="fa-solid fa-angle-down" class="skills-arrow" />
         </div>
-
         <div
           class="skills__header"
-          :class="dataTarget === 'BacEnd' ? 'skills__active' : ''"
-          @click="dataTarget = 'BacEnd'"
+          :class="skillsTarget.name === 'tool' ? 'skills__active' : ''"
+          @click="this.SKILL_DATA('tool')"
         >
-        <font-awesome-icon icon="fa-solid fa-toolbox" class="skills__icon" />
+          <font-awesome-icon icon="fa-solid fa-toolbox" class="skills__icon" />
           <div>
             <h1 class="skills__title">Development Tools</h1>
             <span class="skills__subtitle">More than 2 years</span>
@@ -43,31 +41,44 @@
           <font-awesome-icon icon="fa-solid fa-angle-down" class="skills-arrow" />
         </div>
       </div>
-
       <div class="skills__content">
-        <keep-alive>
-          <component :is="dataTarget"></component>
-        </keep-alive>
+        <SkillsModal :data="skillsTarget.data" :class="animateClass" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import FrontEnd from './skills/Skill-frontEnd.vue'
-import Design from './skills/skill-design.vue'
-import BacEnd from './skills/skill-bacEnd.vue'
-
+import SkillsModal from './skills/skillsModal.vue'
+import { mapActions, mapState } from 'vuex'
 export default {
   data() {
     return {
-      dataTarget: 'FrontEnd'
+      dataTarget: 'frontEnd',
+      animateClass: ''
     }
   },
   components: {
-    FrontEnd,
-    Design,
-    BacEnd
+    SkillsModal
+  },
+  methods: {
+    ...mapActions(['SKILL_DATA'])
+  },
+  computed: {
+    ...mapState(['skillsTarget'])
+  },
+  watch: {
+    'skillsTarget.data': {
+      immediate: true,
+      handler(newData, oldData) {
+        if (newData !== oldData) {
+          this.animateClass = 'animate__animated animate__lightSpeedInRight'
+          setTimeout(() => {
+            this.animateClass = ''
+          }, 1000)
+        }
+      }
+    }
   }
 }
 </script>
@@ -130,6 +141,7 @@ export default {
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-meidum);
+  text-transform: capitalize;
 }
 
 .skills__bar,
@@ -150,6 +162,17 @@ export default {
 }
 .skills_icon {
   margin-right: 5px;
+}
+
+.slide-enter-active {
+  transform: translateY(50px);
+  opacity: 1;
+  transition: opacity 2;
+}
+.slide-leave-active {
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: 2s;
 }
 @media screen and (max-width: 1024px) {
   .skills__container {
