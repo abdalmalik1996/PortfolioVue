@@ -108,11 +108,19 @@ export default {
   }
 }
 @media screen and (max-width: 576px) {
+  .about_container {
+    row-gap: 1rem;
+  }
+
   .about__info {
     grid-template-columns: repeat(3, 1fr);
   }
   .about__description {
     padding: 0;
+    margin-bottom: var(--mb-1);
+  }
+  .about__info {
+    margin-bottom: var(--mb-1);
   }
 }
 
