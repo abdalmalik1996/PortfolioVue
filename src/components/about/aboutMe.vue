@@ -5,7 +5,7 @@
     <div class="about__data">
       <h3 class="about__heading">Hi,i'm Abd Almalek Jakmery, Based in Syria</h3>
       <p class="about__description">
-        I am a Front-End Developer who specializes in using Vue.js. I have a deep passion for this
+        I'm a Front-End Developer who specializes in using Vue.js. I have a deep passion for this
         work and I am constantly evolving and growing in this field.
       </p>
 
