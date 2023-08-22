@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import workCard from './work/workcard.vue'
+import workCard from './work/workCard.vue'
 import workModal from './work/workModal.vue'
 import { mapMutations, mapState } from 'vuex'
 export default {
