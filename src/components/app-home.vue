@@ -70,7 +70,7 @@ export default {
     async animateText() {
       const titleText = 'Hi, I am Abd Almalek'
       const subtitleText = 'Designer, Frontend developer'
-      const descriptionText = 'I design and code beautifully simple things, and I love what I do.'
+      const descriptionText = 'I design and code beautifully simple things, and love what I do.'
 
       await this.animateCharacters(titleText, 'title')
       await this.animateCharacters(subtitleText, 'subtitle')
