@@ -67,17 +67,7 @@
             </span>
           </div>
 
-          <div class="timline__item">
-            <div class="circle__dot"></div>
-            <h3 class="timline__title">
-              Udemy - CSS - The Complete Guide (incl. Flexbox, Grid & Sass)
-            </h3>
-            <p class="timeline__text">22h 46m total length</p>
-            <span class="timline__date">
-              <font-awesome-icon icon="fa-solid fa-calendar-days" />
-              For now
-            </span>
-          </div>
+         
           <div class="timline__item">
             <div class="circle__dot"></div>
             <h3 class="timline__title">Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)</h3>
