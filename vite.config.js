@@ -10,11 +10,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  build: {
-    command: 'npm run build',
-    publish: '/build',
-    base: '/'
-  },
-
+  }
 })
