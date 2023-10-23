@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import SkillsModal from './skills/skillsModal.vue'
+import SkillsModal from '@/components/skills/skillsModal.vue'
 import { mapActions, mapState } from 'vuex'
 export default {
   data() {

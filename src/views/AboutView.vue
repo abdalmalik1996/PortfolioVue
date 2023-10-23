@@ -29,8 +29,8 @@
 </template>
 
 <script>
-import AboutMe from './about/aboutMe.vue'
-import Qualification from './about/about-qualification.vue'
+import AboutMe from '@/components/about/aboutMe.vue'
+import Qualification from '@/components/about/about-qualification.vue'
 export default {
   data() {
     return {
