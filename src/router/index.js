@@ -31,12 +31,15 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: Contact
+  },
+  {
+    path: '/:catchAll(.*)*',
+    redirect: { name: 'home' }
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-
   routes
 })
 
