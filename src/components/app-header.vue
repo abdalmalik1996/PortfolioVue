@@ -26,7 +26,7 @@
                   @click="closeNave"
                   class="nav__link"
                   exact-active-class="active-link"
-                  to="/about"
+                  :to="{ name: 'about' }"
                   >About</router-link
                 >
               </li>
