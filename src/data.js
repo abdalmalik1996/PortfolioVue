@@ -11,15 +11,32 @@ import clipboard from '@/assets/images/Clipboard.jpg'
 import Clipboard_scroll from '@/assets/images/Clipboard-mobile.jpg'
 import javascript from '@/assets/images/javascript.png'
 import web_design from '@/assets/images/web-design.png'
+import form_main from '@/assets/images/form-main.jpg'
+import rest_countries from '@/assets/images/rest-countries-api.jpg'
 
 import figma from '@/assets/icons/figma.svg'
 import adobeXd from '@/assets/icons/adobeXd.svg'
 import tailwind from '@/assets/icons/tailwind.svg'
 import nodejs from '@/assets/icons/nodejs.svg'
-
+import vuetify from '@/assets/icons/vuetify.svg'
 export const data = {
-  work: {
-    0: {
+  work: [
+    {
+      img: form_main,
+      title: 'Multi-step form solution',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify'],
+      description: ' This website  is a out this multi-step form',
+      link: 'https://strong-crumble-fde41e.netlify.app/'
+    },
+    {
+      img: rest_countries,
+      title: 'REST Countries API with color theme switcher',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify'],
+      description:
+        'integrate with the [REST Countries API](https://restcountries.com) to pull country data and display ',
+      link: 'https://merry-tanuki-0f14c7.netlify.app/'
+    },
+    {
       img: melase,
       title: 'mealse search landing page',
       technologies: ['html', 'css', 'js', 'vue', 'api', 'tailwind'],
@@ -27,7 +44,7 @@ export const data = {
         'Our website is a recipe and meal search application built using Vue.js and Vuex. It interacts with a free third-party API and incorporates Tailwind CSS for styling.',
       link: 'https://flourishing-peony-ba006d.netlify.app/'
     },
-    1: {
+    {
       img: invoice,
       title: 'invoice app landing page',
       technologies: ['html', 'css', 'js', 'vue', 'api'],
@@ -35,16 +52,8 @@ export const data = {
         'This website is a Vue-based billing system that uses Vuex for state management and integrates with Firebase. It allows users to create, manage, and synchronize invoices in real-time.',
       link: 'https://courageous-boba-8865df.netlify.app/'
     },
-    // 2: {
-    //   img: 'src/assets/images/a.png',
-    //   title: 'Login landing page',
-    //   technologies: ['html', 'css', 'js', 'vue', 'api'],
-    //   description:
-    //     'The login page uses Vue.js, Vuex, and Axios for a smooth and effective login experience. Vue.js handles the interactive UI components, Vuex manages the application state, and Axios handles HTTP requests to the server.',
-    //   link: ''
-    // },
 
-    3: {
+    {
       img: Insure,
       imgscrol: Insure_scrol,
       title: 'Insure-landing-page',
@@ -52,7 +61,7 @@ export const data = {
       description: 'layout skills with this HTML & CSS only landing page',
       link: 'https://tubular-axolotl-786ac3.netlify.app/'
     },
-    4: {
+    {
       img: space_tourism,
       title: 'space-tourism',
       technologies: ['html', 'css'],
@@ -60,7 +69,7 @@ export const data = {
       link: 'https://cozy-flan-0cbc10.netlify.app/index.html'
     },
 
-    5: {
+    {
       img: huddle,
       imgscrol: huddle_scrol,
       title: 'Huddle landing page with curved sections',
@@ -70,7 +79,7 @@ export const data = {
       link: 'https://astonishing-brigadeiros-eadeca.netlify.app/'
     },
 
-    6: {
+    {
       img: blogr,
       imgscrol: blogr_scrol,
       title: 'Blogr landing page',
@@ -79,7 +88,7 @@ export const data = {
         'Flex layout with this landing page challenge. working with HTML & CSS for this project with a tiny bit of JS for the mobile menu.',
       link: 'https://guileless-crepe-bc35e7.netlify.app/'
     },
-    7: {
+    {
       img: clipboard,
       imgscrol: Clipboard_scroll,
       title: 'Clipboard landing page',
@@ -94,7 +103,7 @@ export const data = {
     //   description: '',
     //   link: ''
     // }
-  },
+  ],
   certificate: {
     js: {
       title: 'JavaScript Algorithms and Data Structures',
@@ -127,6 +136,11 @@ export const data = {
       {
         name: 'vue',
         icon: 'fa-brands fa-vuejs',
+        number: '75'
+      },
+      {
+        name: 'vuetify',
+        img: vuetify,
         number: '75'
       }
     ],
