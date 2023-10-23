@@ -17,7 +17,7 @@
                   @click="closeNave"
                   class="nav__link"
                   exact-active-class="active-link"
-                  to="/"
+                  :to="{ name: 'home' }"
                   >Home</router-link
                 >
               </li>

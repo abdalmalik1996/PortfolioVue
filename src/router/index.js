@@ -8,18 +8,18 @@ const Contact = () => import('../views/ContactView.vue')
 
 const routes = [
   {
-    path: '/',
     name: 'home',
+    path: '/',
     component: Home
   },
   {
-    path: '/about',
     name: 'about',
+    path: '/about',
     component: About
   },
   {
-    path: '/skills',
     name: 'skills',
+    path: '/skills',
     component: Skills
   },
   {
