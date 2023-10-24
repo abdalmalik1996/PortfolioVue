@@ -13,7 +13,7 @@ import javascript from '@/assets/images/javascript.png'
 import web_design from '@/assets/images/web-design.png'
 import form_main from '@/assets/images/form-main.jpg'
 import rest_countries from '@/assets/images/rest-countries-api.jpg'
-
+import Music from '@/assets/images/Music.png'
 import figma from '@/assets/icons/figma.svg'
 import adobeXd from '@/assets/icons/adobeXd.svg'
 import tailwind from '@/assets/icons/tailwind.svg'
@@ -35,6 +35,14 @@ export const data = {
       description:
         'integrate with the [REST Countries API](https://restcountries.com) to pull country data and display ',
       link: 'https://merry-tanuki-0f14c7.netlify.app/'
+    },
+    {
+      img: Music,
+      title: 'Music player',
+      technologies: ['html', 'css', 'js', 'vue', 'firebase', 'tailwind'],
+      description:
+        'The website contains file uploads, testing, PWAs, internationalization, and authentication with Vue 3.(Needs to run VPN )',
+      link: 'https://remarkable-sawine-9fb9f0.netlify.app/'
     },
     {
       img: melase,

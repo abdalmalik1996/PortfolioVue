@@ -14,8 +14,8 @@ import {
   faAngleDown,
   faSwatchbook,
   faToolbox,
-  faGraduationCap, 
-  faArrowRight,
+  faGraduationCap,
+  faArrowRight
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
