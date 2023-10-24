@@ -27,14 +27,14 @@
           <font-awesome-icon icon="fa-brands fa-facebook-messenger" class="info__icon" />
 
           <div>
-            <h4 class="info__title">Messenger</h4>
+            <p class="info__title">Messenger</p>
             <span class="info__subtitle">AbdAlmalikJakmery</span>
           </div>
         </a>
         <a target="_blank" href="https://wa.me/+963967287756" class="info__item whatsapp">
           <font-awesome-icon icon="fa-brands fa-whatsapp" class="info__icon whatsapp" />
           <div>
-            <h4 class="info__title">Whatsapp</h4>
+            <p class="info__title">Whatsapp</p>
             <span class="info__subtitle">+963-967287756</span>
           </div>
         </a>
@@ -42,7 +42,7 @@
           <font-awesome-icon class="info__icon" icon="fa-solid fa-envelope" />
 
           <div>
-            <h4 class="info__title">Email</h4>
+            <p class="info__title">Email</p>
             <span class="info__subtitle">Abd.Almlaik@gmail.com</span>
           </div>
         </a>
