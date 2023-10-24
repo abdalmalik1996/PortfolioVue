@@ -26,14 +26,14 @@
         <a class="info__item messenger" target="_blank" href="https://m.me/AbdAlmalikJakmery">
           <font-awesome-icon icon="fa-brands fa-facebook-messenger" class="info__icon" />
 
-          <div>
+          <div class="info-title">
             <p class="info__title">Messenger</p>
             <span class="info__subtitle">AbdAlmalikJakmery</span>
           </div>
         </a>
         <a target="_blank" href="https://wa.me/+963967287756" class="info__item whatsapp">
           <font-awesome-icon icon="fa-brands fa-whatsapp" class="info__icon whatsapp" />
-          <div>
+          <div class="info-title">
             <p class="info__title">Whatsapp</p>
             <span class="info__subtitle">+963-967287756</span>
           </div>
@@ -41,7 +41,7 @@
         <a target="_blank" href="mailto:Abd.almalik96@gmail.com" class="info__item email">
           <font-awesome-icon class="info__icon" icon="fa-solid fa-envelope" />
 
-          <div>
+          <div class="info-title">
             <p class="info__title">Email</p>
             <span class="info__subtitle">Abd.Almlaik@gmail.com</span>
           </div>
@@ -189,8 +189,9 @@ export default {
 }
 @media screen and (max-width: 576px) {
   .home {
-    background: none;
+    /* background: none; */
     /* height: initial; */
+    background-position: 70% ;
     align-items: initial;
     padding: 5rem 0 2rem;
   }
@@ -210,7 +211,7 @@ export default {
     right: 0;
   }
 
-  .my__info {
+  .info-title {
     display: none;
   }
   .home__social-link {

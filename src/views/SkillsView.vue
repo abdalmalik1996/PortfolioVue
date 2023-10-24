@@ -12,7 +12,6 @@
           <img class="skills__icon" src="../assets/icons/brackets-curly.svg" alt="" />
           <div>
             <h1 class="skills__title">Frontend developer</h1>
-            <span class="skills__subtitle">More than 4 years</span>
           </div>
           <font-awesome-icon icon="fa-solid fa-angle-down" class="skills-arrow" />
         </div>
@@ -24,7 +23,6 @@
           <font-awesome-icon icon="fa-solid fa-swatchbook" class="skills__icon" />
           <div>
             <h1 class="skills__title">UI / UX design</h1>
-            <span class="skills__subtitle">More than 5 yers</span>
           </div>
           <font-awesome-icon icon="fa-solid fa-angle-down" class="skills-arrow" />
         </div>
@@ -36,7 +34,6 @@
           <font-awesome-icon icon="fa-solid fa-toolbox" class="skills__icon" />
           <div>
             <h1 class="skills__title">Development Tools</h1>
-            <span class="skills__subtitle">More than 2 years</span>
           </div>
           <font-awesome-icon icon="fa-solid fa-angle-down" class="skills-arrow" />
         </div>
