@@ -15,7 +15,7 @@
 
       <div class="home__data">
         <h1 class="home__title">{{ title }}</h1>
-        <h3 class="home__subtitle">{{ subtitle }}</h3>
+        <p class="home__subtitle">{{ subtitle }}</p>
         <p class="home__description">{{ description }}</p>
         <router-link class="animate__animated animate__bounce button" to="about" v-if="showButton">
           <font-awesome-icon icon="fa-solid fa-user" style="font-size: 1.25rem" />
