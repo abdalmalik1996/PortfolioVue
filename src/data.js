@@ -26,7 +26,8 @@ export const data = {
       title: 'Multi-step form solution',
       technologies: ['html', 'css', 'js', 'vue', 'Vuetify'],
       description: ' This website  is a out this multi-step form',
-      link: 'https://strong-crumble-fde41e.netlify.app/'
+      link: 'https://strong-crumble-fde41e.netlify.app/',
+      linkgithub: 'https://github.com/abdalmalik1996/multi-step-form-main.git'
     },
     {
       img: rest_countries,
@@ -34,7 +35,9 @@ export const data = {
       technologies: ['html', 'css', 'js', 'vue', 'Vuetify'],
       description:
         'integrate with the [REST Countries API](https://restcountries.com) to pull country data and display ',
-      link: 'https://merry-tanuki-0f14c7.netlify.app/'
+      link: 'https://merry-tanuki-0f14c7.netlify.app/',
+      linkgithub:
+        'https://github.com/abdalmalik1996/rest-countries-api-with-color-theme-switcher-master.git'
     },
     {
       img: Music,
@@ -42,7 +45,8 @@ export const data = {
       technologies: ['html', 'css', 'js', 'vue', 'firebase', 'tailwind'],
       description:
         'The website contains file uploads, testing, PWAs, internationalization, and authentication with Vue 3.(Needs to run VPN )',
-      link: 'https://remarkable-sawine-9fb9f0.netlify.app/'
+      link: 'https://remarkable-sawine-9fb9f0.netlify.app/',
+      linkgithub: 'https://github.com/abdalmalik1996/MUSIC.git'
     },
     {
       img: melase,
@@ -50,7 +54,8 @@ export const data = {
       technologies: ['html', 'css', 'js', 'vue', 'api', 'tailwind'],
       description:
         'Our website is a recipe and meal search application built using Vue.js and Vuex. It interacts with a free third-party API and incorporates Tailwind CSS for styling.',
-      link: 'https://flourishing-peony-ba006d.netlify.app/'
+      link: 'https://flourishing-peony-ba006d.netlify.app/',
+      linkgithub : "",
     },
     {
       img: invoice,

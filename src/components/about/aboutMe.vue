@@ -5,8 +5,8 @@
     <div class="about__data">
       <h3 class="about__heading">Hi,i'm Abd Almalek Jakmery, Based in Syria</h3>
       <p class="about__description">
-        I'm a Front-End Developer who specializes in using Vue.js. I have a deep passion for this
-        work and I am constantly evolving and growing in this field.
+        Proficient in utilizing Vue and Vuetify for front-end development, adept at working with
+        APIs, and experienced in using Postman for seamless API testing and integration.
       </p>
 
       <div class="about__info grid">

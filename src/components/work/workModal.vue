@@ -34,6 +34,12 @@
                   <font-awesome-icon icon="fa-solid fa-arrow-right" class="work__button-icon" />
                 </a> 
               </li>
+              <li>
+                <a class="work_link" target="_blank" :href="data.linkgithub"
+                  >view github:
+                  <font-awesome-icon icon="fa-solid fa-arrow-right" class="work__button-icon" />
+                </a> 
+              </li>
             </ul>
           </div>
         </div>
