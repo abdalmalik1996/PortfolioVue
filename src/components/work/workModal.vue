@@ -32,13 +32,13 @@
                 <a class="work_link" target="_blank" :href="data.link"
                   >view page:
                   <font-awesome-icon icon="fa-solid fa-arrow-right" class="work__button-icon" />
-                </a> 
+                </a>
               </li>
-              <li>
+              <li v-if="data.linkgithub">
                 <a class="work_link" target="_blank" :href="data.linkgithub"
                   >view github:
                   <font-awesome-icon icon="fa-solid fa-arrow-right" class="work__button-icon" />
-                </a> 
+                </a>
               </li>
             </ul>
           </div>

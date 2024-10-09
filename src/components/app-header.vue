@@ -6,7 +6,7 @@
     <aside :class="{ 'show-sidebar': navToggle }" class="sidebar" id="sidebar">
       <nav class="nav">
         <div class="nav__logo">
-          <a href="index.html" class="nav__logo-text">A</a>
+          <router-link :to="{ name: 'home' }" class="nav__logo-text">A </router-link>
         </div>
 
         <div class="nav__menu">

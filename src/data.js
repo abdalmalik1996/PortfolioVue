@@ -19,8 +19,16 @@ import adobeXd from '@/assets/icons/adobeXd.svg'
 import tailwind from '@/assets/icons/tailwind.svg'
 import nodejs from '@/assets/icons/nodejs.svg'
 import vuetify from '@/assets/icons/vuetify.svg'
+import webdor from '@/assets//images/webdor.png'
 export const data = {
   work: [
+    {
+      img: webdor,
+      title: 'Shop Templates',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
+      description: 'Modern Themes & Website Templates For Any Project',
+      link: 'https://webdor-front.abdullah-hatahet.com/'
+    },
     {
       img: form_main,
       title: 'Multi-step form solution',
@@ -55,7 +63,7 @@ export const data = {
       description:
         'Our website is a recipe and meal search application built using Vue.js and Vuex. It interacts with a free third-party API and incorporates Tailwind CSS for styling.',
       link: 'https://flourishing-peony-ba006d.netlify.app/',
-      linkgithub : "",
+      linkgithub: ''
     },
     {
       img: invoice,

@@ -191,7 +191,7 @@ export default {
   .home {
     /* background: none; */
     /* height: initial; */
-    background-position: 70% ;
+    background-position: 70%;
     align-items: initial;
     padding: 5rem 0 2rem;
   }
