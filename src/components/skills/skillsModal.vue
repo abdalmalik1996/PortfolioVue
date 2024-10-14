@@ -16,7 +16,11 @@
           <span class="skills__number">{{ skill.number }}%</span>
         </div>
         <div class="skills__bar">
-          <span class="skills__perecentage" :style="{ width: `${skill.number}%` }"></span>
+          <span
+            class="skills__perecentage"
+            style="transition: 0.5s"
+            :style="{ width: `${skill.number}%` }"
+          ></span>
         </div>
       </div>
     </div>

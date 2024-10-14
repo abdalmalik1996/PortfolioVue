@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="contact__contact">
+      <!-- <div class="contact__contact">
         <form action="" class="contact__form">
           <div class="input__container">
             <input type="text" class="input" @focus="handleFukcs" @blur="handleBlur" />
@@ -74,7 +74,7 @@
             Send Message
           </button>
         </form>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -96,7 +96,7 @@ export default {
 <style scoped>
 /* ============== contact section  ================ */
 .contact__container {
-  grid-template-columns: 300px 340px;
+  grid-template-columns: 500px;
   column-gap: 3rem;
   justify-content: center;
   align-items: center;

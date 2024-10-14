@@ -20,10 +20,33 @@ import tailwind from '@/assets/icons/tailwind.svg'
 import nodejs from '@/assets/icons/nodejs.svg'
 import vuetify from '@/assets/icons/vuetify.svg'
 import webdor from '@/assets//images/webdor.png'
+import webdorScrol from '@/assets//images/webdorScrol.jpeg'
+import Archiade from '@/assets//images/Archiade.png'
+import Moonlight from '@/assets//images/Moonlight.png'
+import ArchiadeScrol from '@/assets//images/ArchiadeScrol.jpeg'
+import MoonlightScrol from '@/assets//images/MoonlightScrol.jpeg'
 export const data = {
   work: [
     {
+      img: Moonlight,
+      imgscrol: MoonlightScrol,
+      title: 'Moonlight',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
+      description:
+        'MoonLight platform offers you unique and innovative solutions to provide the best courses in several different fields and with the latest advanced methods of recorded courses and courses with interactive attendance.',
+      link: 'https://moonlightwebsite.dev.warshatec.com/'
+    },
+    {
+      img: Archiade,
+      imgscrol: ArchiadeScrol,
+      title: 'Archiade',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify'],
+      description: 'furniture store',
+      link: 'http://archiade.com/'
+    },
+    {
       img: webdor,
+      imgscrol: webdorScrol,
       title: 'Shop Templates',
       technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
       description: 'Modern Themes & Website Templates For Any Project',
