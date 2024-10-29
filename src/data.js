@@ -50,7 +50,7 @@ export const data = {
       title: 'Shop Templates',
       technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
       description: 'Modern Themes & Website Templates For Any Project',
-      link: 'https://webdor-front.abdullah-hatahet.com/'
+      link: 'https://www.webfmdor.com'
     },
     {
       img: form_main,

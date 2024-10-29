@@ -1,6 +1,10 @@
 <template>
   <div class="about_container container grid">
-    <img src="@/assets/images/hd.png" alt="" class="about__img" />
+    <div class="about__img">
+      <CardParallaxDepth>
+        <img src="@/assets/images/hd.png" />
+      </CardParallaxDepth>
+    </div>
 
     <div class="about__data">
       <h3 class="about__heading">Hi,i'm Abd Almalek Jakmery, Based in Syria</h3>
@@ -10,22 +14,27 @@
       </p>
 
       <div class="about__info grid">
-        <div class="about__box">
-          <font-awesome-icon icon="fa-solid fa-award" class="about__icon" />
-          <h3 class="about__title">Experience</h3>
-          <span class="about__subtitle"> 2 years</span>
-        </div>
-
-        <div class="about__box">
-          <font-awesome-icon icon="fa-solid fa-suitcase" class="about__icon" />
-          <h3 class="about__title">Compleated</h3>
-          <span class="about__subtitle">8 projects </span>
-        </div>
-        <div class="about__box">
-          <font-awesome-icon icon="fa-solid fa-headphones" class="about__icon" />
-          <h3 class="about__title">Support</h3>
-          <span class="about__subtitle">Online 24/7</span>
-        </div>
+        <CardParallaxDepth>
+          <div class="about__box">
+            <font-awesome-icon icon="fa-solid fa-award" class="about__icon" />
+            <h3 class="about__title">Experience</h3>
+            <span class="about__subtitle"> 2 years</span>
+          </div>
+        </CardParallaxDepth>
+        <CardParallaxDepth>
+          <div class="about__box">
+            <font-awesome-icon icon="fa-solid fa-suitcase" class="about__icon" />
+            <h3 class="about__title">Compleated</h3>
+            <span class="about__subtitle">8 projects </span>
+          </div>
+        </CardParallaxDepth>
+        <CardParallaxDepth>
+          <div class="about__box">
+            <font-awesome-icon icon="fa-solid fa-headphones" class="about__icon" />
+            <h3 class="about__title">Support</h3>
+            <span class="about__subtitle">Online 24/7</span>
+          </div>
+        </CardParallaxDepth>
       </div>
       <router-link class="button" to="contact">
         <img src="@/assets/icons/paper-plane.svg" alt="" />
@@ -35,7 +44,12 @@
   </div>
 </template>
 <script>
-export default {}
+import CardParallaxDepth from '../CardParallaxDepth.vue'
+export default {
+  components: {
+    CardParallaxDepth
+  }
+}
 </script>
 
 <style>

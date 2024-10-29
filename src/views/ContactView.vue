@@ -5,37 +5,45 @@
     <div class="contact__container container grid">
       <div class="contact__contact">
         <div class="contact__info">
-          <div class="contact__card">
-            <font-awesome-icon icon="fa-solid fa-envelope" class="contact__card-icon" />
-            <h3 class="contact__card-title">Email</h3>
-            <span class="contact__card-data">Abd.almalik96@gmail.com</span>
-            <a class="contact__button" href="mailto:Abd.almalik96@gmail.com">
-              Write me
-              <font-awesome-icon icon="fa-solid fa-arrow-right" class="contact__button-icon" />
-            </a>
-          </div>
+          <CardParallaxDepth>
+            <div class="contact__card">
+              <font-awesome-icon icon="fa-solid fa-envelope" class="contact__card-icon" />
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">Abd.almalik96@gmail.com</span>
+              <a class="contact__button" href="mailto:Abd.almalik96@gmail.com">
+                Write me
+                <font-awesome-icon icon="fa-solid fa-arrow-right" class="contact__button-icon" />
+              </a>
+            </div>
+          </CardParallaxDepth>
 
-          <div class="contact__card">
-            <font-awesome-icon icon="fa-brands fa-whatsapp" class="contact__card-icon" />
+          <CardParallaxDepth>
+            <div class="contact__card">
+              <font-awesome-icon icon="fa-brands fa-whatsapp" class="contact__card-icon" />
 
-            <h3 class="contact__card-title">Whatsapp</h3>
-            <span class="contact__card-data">+963 967 287 756</span>
-            <a class="contact__button" target="_blank" href="https://wa.me/+963967287756">
-              Write me
-              <font-awesome-icon icon="fa-solid fa-arrow-right" class="contact__button-icon" />
-            </a>
-          </div>
+              <h3 class="contact__card-title">Whatsapp</h3>
+              <span class="contact__card-data">+963 967 287 756</span>
+              <a class="contact__button" target="_blank" href="https://wa.me/+963967287756">
+                Write me
+                <font-awesome-icon icon="fa-solid fa-arrow-right" class="contact__button-icon" />
+              </a>
+            </div>
+          </CardParallaxDepth>
+          <CardParallaxDepth>
+            <div class="contact__card">
+              <font-awesome-icon
+                icon="fa-brands fa-facebook-messenger"
+                class="contact__card-icon"
+              />
 
-          <div class="contact__card">
-            <font-awesome-icon icon="fa-brands fa-facebook-messenger" class="contact__card-icon" />
-
-            <h3 class="contact__card-title">messenger</h3>
-            <span class="contact__card-data">AbdAlmalikJakmery</span>
-            <a class="contact__button" target="_blank" href="https://m.me/AbdAlmalikJakmery">
-              Write me
-              <font-awesome-icon icon="fa-solid fa-arrow-right" class="contact__button-icon" />
-            </a>
-          </div>
+              <h3 class="contact__card-title">messenger</h3>
+              <span class="contact__card-data">AbdAlmalikJakmery</span>
+              <a class="contact__button" target="_blank" href="https://m.me/AbdAlmalikJakmery">
+                Write me
+                <font-awesome-icon icon="fa-solid fa-arrow-right" class="contact__button-icon" />
+              </a>
+            </div>
+          </CardParallaxDepth>
         </div>
       </div>
       <!-- <div class="contact__contact">
@@ -80,7 +88,11 @@
 </template>
 
 <script>
+import CardParallaxDepth from '../components/CardParallaxDepth.vue'
 export default {
+  components: {
+    CardParallaxDepth
+  },
   methods: {
     handleBlur(event) {
       if (event.target.value == '') {

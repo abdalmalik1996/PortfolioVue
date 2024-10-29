@@ -635,7 +635,7 @@ const initFluid = () => {
   let divergence
   let curl
   let pressure
-  let ditheringTexture = createTextureAsync('../app/themes/flipp/dist/images/LDR_LLL1_0.png')
+  // let ditheringTexture = createTextureAsync('../app/themes/flipp/dist/images/LDR_LLL1_0.png')
 
   const blurProgram = new Program(blurVertexShader, blurShader)
   const copyProgram = new Program(baseVertexShader, copyShader)
@@ -1227,5 +1227,11 @@ const initFluid = () => {
   width: calc(100vw - 100px);
   height: 100dvh;
   z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  #fluid {
+    width: 100vw;
+    left: 0px;
+  }
 }
 </style>

@@ -1,10 +1,12 @@
 <template>
-  <section class="work section">
+  <section class="work section" style="padding-top: 40px">
     <h2 data-heading="My ProtFolio" class="section__title">Recent Works</h2>
 
     <div class="work__container container grid">
-      <workCard @click="hanlder(card)" v-for="(card, index) in work" :key="index" :card="card">
-      </workCard>
+      <CardParallaxDepth v-for="(card, index) in work" :key="index">
+        <workCard @click="hanlder(card)" :card="card"> </workCard>
+      </CardParallaxDepth>
+
       <transition
         enter-active-class="animate__animated animate__fadeIn"
         leave-active-class="animate__animated animate__fadeOut"
@@ -19,6 +21,7 @@
 <script>
 import workCard from '@/components/work/workCard.vue'
 import workModal from '@/components/work/workModal.vue'
+import CardParallaxDepth from '../components/CardParallaxDepth.vue'
 import { mapMutations, mapState } from 'vuex'
 export default {
   data() {
@@ -30,7 +33,8 @@ export default {
   },
   components: {
     workCard,
-    workModal
+    workModal,
+    CardParallaxDepth
   },
   methods: {
     ...mapMutations(['TOGGLE_POPUP']),
@@ -51,8 +55,7 @@ export default {
   grid-template-columns: repeat(3, calc((33.3333% - 2.5rem) - 0.001rem));
   gap: 1.8rem;
   justify-content: center;
-  padding-top: 1rem;
-  height: 50vh;
+  padding-top: 2rem;
   overflow-y: auto;
 }
 
