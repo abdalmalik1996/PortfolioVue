@@ -15,7 +15,8 @@ import {
   faSwatchbook,
   faToolbox,
   faGraduationCap,
-  faArrowRight
+  faArrowRight,
+  faDownload
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -51,7 +52,8 @@ library.add(
   faSwatchbook,
   faToolbox,
   faArrowRight,
-  faBootstrap
+  faBootstrap,
+  faDownload
 )
 
 export default FontAwesomeIcon

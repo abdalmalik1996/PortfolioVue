@@ -11,16 +11,18 @@
           <Component :is="Component" />
         </transition>
       </router-view>
+      <canvasFluid></canvasFluid>
     </main>
   </div>
 </template>
 
 <script>
 import AppHeader from './components/app-header.vue'
-
+import canvasFluid from './components/canvasFluid.vue'
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    canvasFluid
   }
 }
 </script>

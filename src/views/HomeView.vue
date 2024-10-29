@@ -1,5 +1,6 @@
 <template>
   <section class="home" id="home">
+    <div class="bac-image"></div>
     <div class="home__container container grid">
       <!-- <div class="home__social">
         <span class="home__social-follow">Follow ME</span>
@@ -17,10 +18,20 @@
         <h1 class="home__title">{{ title }}</h1>
         <p class="home__subtitle">{{ subtitle }}</p>
         <p class="home__description">{{ description }}</p>
-        <router-link class="animate__animated animate__bounce button" to="about" v-if="showButton">
-          <font-awesome-icon icon="fa-solid fa-user" style="font-size: 1.25rem" />
-          More About Me
-        </router-link>
+        <div style="display: flex; gap: 15px">
+          <router-link
+            class="animate__animated animate__bounce button"
+            to="about"
+            v-if="showButton"
+          >
+            <font-awesome-icon icon="fa-solid fa-user" style="font-size: 1.25rem" />
+            More About Me
+          </router-link>
+          <!-- <button class="animate__animated animate__bounce button" v-if="showButton">
+            <font-awesome-icon icon="fa fa-download" style="font-size: 1.25rem" />
+            Download CV
+          </button> -->
+        </div>
       </div>
       <div class="my__info">
         <a class="info__item messenger" target="_blank" href="https://m.me/AbdAlmalikJakmery">
@@ -100,10 +111,11 @@ export default {
 
 <style scoped>
 .home {
-  background: url('../assets/images/home-1-2.png');
   background-size: cover;
   background-position: center center;
   height: 100vh;
+}
+.bac-image {
 }
 .home__container {
   position: relative;
