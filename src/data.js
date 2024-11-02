@@ -19,14 +19,41 @@ import adobeXd from '@/assets/icons/adobeXd.svg'
 import tailwind from '@/assets/icons/tailwind.svg'
 import nodejs from '@/assets/icons/nodejs.svg'
 import vuetify from '@/assets/icons/vuetify.svg'
-import webdor from '@/assets//images/webdor.png'
-import webdorScrol from '@/assets//images/webdorScrol.jpeg'
-import Archiade from '@/assets//images/Archiade.png'
-import Moonlight from '@/assets//images/Moonlight.png'
-import ArchiadeScrol from '@/assets//images/ArchiadeScrol.jpeg'
-import MoonlightScrol from '@/assets//images/MoonlightScrol.jpeg'
+import webdor from '@/assets/images/webdor.png'
+import webdorScrol from '@/assets/images/webdorScrol.jpeg'
+import Archiade from '@/assets/images/Archiade.png'
+import Moonlight from '@/assets/images/Moonlight.png'
+import ArchiadeScrol from '@/assets/images/ArchiadeScrol.jpeg'
+import MoonlightScrol from '@/assets/images/MoonlightScrol.jpeg'
+import gosunnex from '@/assets/images/gosunnex.png'
+import goSunnexScrol from '@/assets/images/goSunnexScrol.jpeg'
+import AlMUDEER from '@/assets/images/AlMUDEER.png'
 export const data = {
   work: [
+    {
+      img: gosunnex,
+      imgscrol: goSunnexScrol,
+      title: 'gosunnex',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
+      description: 'website application',
+      link: 'https://gosunnex.com/'
+    },
+    {
+      img: webdor,
+      imgscrol: webdorScrol,
+      title: 'Shop Templates',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
+      description: 'Modern Themes & Website Templates For Any Project',
+      link: 'https://www.webfmdor.com'
+    },
+    {
+      img: AlMUDEER,
+      title: 'Al MUDEER',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify'],
+      description: '',
+      link: 'https://almudeer.ae/'
+    },
+
     {
       img: Moonlight,
       imgscrol: MoonlightScrol,
@@ -44,14 +71,7 @@ export const data = {
       description: 'furniture store',
       link: 'http://archiade.com/'
     },
-    {
-      img: webdor,
-      imgscrol: webdorScrol,
-      title: 'Shop Templates',
-      technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
-      description: 'Modern Themes & Website Templates For Any Project',
-      link: 'https://www.webfmdor.com'
-    },
+
     {
       img: form_main,
       title: 'Multi-step form solution',
