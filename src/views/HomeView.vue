@@ -27,10 +27,14 @@
             <font-awesome-icon icon="fa-solid fa-user" style="font-size: 1.25rem" />
             More About Me
           </router-link>
-          <!-- <button class="animate__animated animate__bounce button" v-if="showButton">
+          <button
+            class="animate__animated animate__bounce button"
+            v-if="showButton"
+            @click="DownloadCv"
+          >
             <font-awesome-icon icon="fa fa-download" style="font-size: 1.25rem" />
             Download CV
-          </button> -->
+          </button>
         </div>
       </div>
       <div class="my__info">
@@ -104,6 +108,15 @@ export default {
     handleButtonClick() {
       console.log('Button clicked!')
       // أداء أي إجراءات إضافية هنا
+    },
+    DownloadCv() {
+      const pdfUrl = '/cv.pdf'
+      const link = document.createElement('a')
+      link.href = pdfUrl
+      link.download = 'Abd_Almalik_Jakmery_CV.pdf' // اسم الملف بعد التنزيل
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
     }
   }
 }

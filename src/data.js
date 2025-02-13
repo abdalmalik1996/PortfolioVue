@@ -26,10 +26,18 @@ import Moonlight from '@/assets/images/Moonlight.png'
 import ArchiadeScrol from '@/assets/images/ArchiadeScrol.jpeg'
 import MoonlightScrol from '@/assets/images/MoonlightScrol.jpeg'
 import gosunnex from '@/assets/images/gosunnex.png'
+import PresentlyAgency from '@/assets/images/PresentlyAgency.png'
 import goSunnexScrol from '@/assets/images/goSunnexScrol.jpeg'
 import AlMUDEER from '@/assets/images/AlMUDEER.png'
 export const data = {
   work: [
+    {
+      img: PresentlyAgency,
+      title: 'Presently Agency',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
+      description: 'website Advertising agency',
+      link: 'https://presently-agency.com/'
+    },
     {
       img: gosunnex,
       imgscrol: goSunnexScrol,
