@@ -61,16 +61,15 @@ export const data = {
       description: '',
       link: 'https://almudeer.ae/'
     },
-
-    {
-      img: Moonlight,
-      imgscrol: MoonlightScrol,
-      title: 'Moonlight',
-      technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
-      description:
-        'MoonLight platform offers you unique and innovative solutions to provide the best courses in several different fields and with the latest advanced methods of recorded courses and courses with interactive attendance.',
-      link: 'https://moonlightwebsite.dev.warshatec.com/'
-    },
+    // {
+    //   img: Moonlight,
+    //   imgscrol: MoonlightScrol,
+    //   title: 'Moonlight',
+    //   technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
+    //   description:
+    //     'MoonLight platform offers you unique and innovative solutions to provide the best courses in several different fields and with the latest advanced methods of recorded courses and courses with interactive attendance.',
+    //   link: 'https://moonlightwebsite.dev.warshatec.com/'
+    // },
     {
       img: Archiade,
       imgscrol: ArchiadeScrol,
