@@ -48,6 +48,12 @@
             <!-- <p class="info__title">linkedin</p> -->
           </div>
         </a>
+        <a class="info__item" target="_blank" href="https://github.com/abdalmalik1996">
+          <font-awesome-icon icon="fa-brands fa-github" class="info__icon" />
+          <div class="info-title">
+            <!-- <p class="info__title">linkedin</p> -->
+          </div>
+        </a>
         <a class="info__item messenger" target="_blank" href="https://m.me/AbdAlmalikJakmery">
           <font-awesome-icon icon="fa-brands fa-facebook-messenger" class="info__icon" />
           <div class="info-title">

@@ -1,18 +1,16 @@
 <template>
   <div class="about_container container grid">
     <div class="about__img">
-      <CardParallaxDepth>
-        <img src="@/assets/images/about.jpg" />
-      </CardParallaxDepth>
+      <img style="border-radius: 50px" src="@/assets/images/about.jpg" />
     </div>
 
     <div class="about__data">
       <h3 class="about__heading">Abd Almalek Jakmery</h3>
       <p class="about__description">
-        I'm a Front-End Developer and Freelancer specializing in Nuxt.js, Vue.js, Vuetify, and
-        TypeScript. I have a strong track record of transforming Figma designs into stunning digital
-        experiences and building seamless, high-performance admin dashboards. My focus is always on
-        delivering exceptional user experiences with clean, efficient, and scalable code. 🚀
+        I'm a Front-End Developer and Freelancer specializing, Vue.js, Vuetify, and TypeScript. I
+        have a strong track record of transforming Figma designs into stunning digital experiences
+        and building seamless, high-performance admin dashboards. My focus is always on delivering
+        exceptional user experiences with clean, efficient, and scalable code. 🚀
       </p>
 
       <div class="about__info grid">
@@ -74,12 +72,12 @@ export default {
 }
 .about__heading {
   font-size: var(--h1-font-size);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--mb-0-50);
 }
 
 .about__description {
   text-align: left;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-0-75);
   line-height: 1.5;
   font-size: var(--normal-font-size);
 }

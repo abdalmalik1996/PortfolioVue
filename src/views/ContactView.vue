@@ -7,6 +7,22 @@
         <div class="contact__info">
           <CardParallaxDepth>
             <div class="contact__card">
+              <font-awesome-icon icon="fa-brands fa-linkedin" class="contact__card-icon" />
+
+              <h3 class="contact__card-title">Linkedin</h3>
+              <span class="contact__card-data">AbdAlmalikJakmery</span>
+              <a
+                class="contact__button"
+                target="_blank"
+                href="https:/www.linkedin.com/in/abd-almalik-jakmery-57a2b0192"
+              >
+                Write me
+                <font-awesome-icon icon="fa-solid fa-arrow-right" class="contact__button-icon" />
+              </a>
+            </div>
+          </CardParallaxDepth>
+          <CardParallaxDepth>
+            <div class="contact__card">
               <font-awesome-icon icon="fa-solid fa-envelope" class="contact__card-icon" />
               <h3 class="contact__card-title">Email</h3>
               <span class="contact__card-data">Abd.almalik96@gmail.com</span>
