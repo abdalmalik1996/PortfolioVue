@@ -34,8 +34,8 @@ const mousePX = computed(() => mouseX.value / width.value)
 const mousePY = computed(() => mouseY.value / height.value)
 
 const cardStyle = computed(() => {
-  const rX = Math.min(Math.max(mousePY.value * -15, -15), 15) // تقييد زاوية الدوران في المحور X
-  const rY = Math.min(Math.max(mousePX.value * 15, -15), 15) // تقييد زاوية الدوران في المحور Y
+  const rX = Math.min(Math.max(mousePY.value * -5, -50), 5) // تقييد زاوية الدوران في المحور X
+  const rY = Math.min(Math.max(mousePX.value * 5, -50), 5) // تقييد زاوية الدوران في المحور Y
   return {
     transform: `rotateY(${rY}deg) rotateX(${rX}deg)`,
     transition: 'transform 0.1s'
@@ -90,7 +90,7 @@ const handleMouseLeave = () => {
   overflow: hidden;
   border-radius: 10px;
   transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  box-shadow: 0px 0px 19px 1px rgba(255, 255, 255, 0.075);
+  /* box-shadow: 0px 0px 19px 1px rgba(255, 255, 255, 0.075); */
 }
 
 .card > div {

@@ -2,15 +2,17 @@
   <div class="about_container container grid">
     <div class="about__img">
       <CardParallaxDepth>
-        <img src="@/assets/images/hd.png" />
+        <img src="@/assets/images/about.jpg" />
       </CardParallaxDepth>
     </div>
 
     <div class="about__data">
-      <h3 class="about__heading">Hi,i'm Abd Almalek Jakmery, Based in Syria</h3>
+      <h3 class="about__heading">Abd Almalek Jakmery</h3>
       <p class="about__description">
-        Proficient in utilizing Vue and Vuetify for front-end development, adept at working with
-        APIs, and experienced in using Postman for seamless API testing and integration.
+        I'm a Front-End Developer and Freelancer specializing in Nuxt.js, Vue.js, Vuetify, and
+        TypeScript. I have a strong track record of transforming Figma designs into stunning digital
+        experiences and building seamless, high-performance admin dashboards. My focus is always on
+        delivering exceptional user experiences with clean, efficient, and scalable code. 🚀
       </p>
 
       <div class="about__info grid">
@@ -25,14 +27,14 @@
           <div class="about__box">
             <font-awesome-icon icon="fa-solid fa-suitcase" class="about__icon" />
             <h3 class="about__title">Compleated</h3>
-            <span class="about__subtitle">8 projects </span>
+            <span class="about__subtitle">{{ work.length }} projects </span>
           </div>
         </CardParallaxDepth>
         <CardParallaxDepth>
           <div class="about__box">
             <font-awesome-icon icon="fa-solid fa-headphones" class="about__icon" />
             <h3 class="about__title">Support</h3>
-            <span class="about__subtitle">Online 24/7</span>
+            <span class="about__subtitle">Online 24/24</span>
           </div>
         </CardParallaxDepth>
       </div>
@@ -45,7 +47,13 @@
 </template>
 <script>
 import CardParallaxDepth from '../CardParallaxDepth.vue'
+
 export default {
+  data() {
+    return {
+      work: this.$store.state.workData
+    }
+  },
   components: {
     CardParallaxDepth
   }
@@ -65,7 +73,7 @@ export default {
   justify-self: center; /*????????? */
 }
 .about__heading {
-  font-size: var(--h3-font-size);
+  font-size: var(--h1-font-size);
   margin-bottom: var(--mb-0-75);
 }
 
@@ -73,6 +81,7 @@ export default {
   text-align: left;
   margin-bottom: var(--mb-2);
   line-height: 1.5;
+  font-size: var(--normal-font-size);
 }
 
 .about__info {
@@ -83,7 +92,7 @@ export default {
 .about__box {
   text-align: center;
   border-radius: 0.25rem;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1rem;
   background-color: var(--box-color);
 }
 .about__icon {

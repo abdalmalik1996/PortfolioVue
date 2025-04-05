@@ -27,7 +27,8 @@ import {
   faGithub,
   faFacebookMessenger,
   faWhatsapp,
-  faBootstrap
+  faBootstrap,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
@@ -37,6 +38,7 @@ library.add(
   faUser,
   faFacebookMessenger,
   faWhatsapp,
+  faLinkedin,
   faEnvelope,
   faAward,
   faSuitcase,

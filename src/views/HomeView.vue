@@ -38,27 +38,36 @@
         </div>
       </div>
       <div class="my__info">
+        <a
+          class="info__item messenger"
+          target="_blank"
+          href="https://www.linkedin.com/in/abd-almalik-jakmery-57a2b0192"
+        >
+          <font-awesome-icon icon="fa-brands fa-linkedin" class="info__icon" />
+          <div class="info-title">
+            <!-- <p class="info__title">linkedin</p> -->
+          </div>
+        </a>
         <a class="info__item messenger" target="_blank" href="https://m.me/AbdAlmalikJakmery">
           <font-awesome-icon icon="fa-brands fa-facebook-messenger" class="info__icon" />
-
           <div class="info-title">
-            <p class="info__title">Messenger</p>
-            <span class="info__subtitle">AbdAlmalikJakmery</span>
+            <!-- <p class="info__title">Messenger</p> -->
+            <!-- <span class="info__subtitle">AbdAlmalikJakmery</span> -->
           </div>
         </a>
         <a target="_blank" href="https://wa.me/+963967287756" class="info__item whatsapp">
           <font-awesome-icon icon="fa-brands fa-whatsapp" class="info__icon whatsapp" />
           <div class="info-title">
-            <p class="info__title">Whatsapp</p>
-            <span class="info__subtitle">+963-967287756</span>
+            <!-- <p class="info__title">Whatsapp</p> -->
+            <!-- <span class="info__subtitle">+963-967287756</span> -->
           </div>
         </a>
         <a target="_blank" href="mailto:Abd.almalik96@gmail.com" class="info__item email">
           <font-awesome-icon class="info__icon" icon="fa-solid fa-envelope" />
 
           <div class="info-title">
-            <p class="info__title">Email</p>
-            <span class="info__subtitle">Abd.Almlaik@gmail.com</span>
+            <!-- <p class="info__title">Email</p> -->
+            <!-- <span class="info__subtitle">Abd.Almlaik@gmail.com</span> -->
           </div>
         </a>
       </div>
@@ -83,9 +92,11 @@ export default {
   },
   methods: {
     async animateText() {
-      const titleText = 'Hi, I am Abd Almalek'
-      const subtitleText = 'Designer, Frontend developer'
-      const descriptionText = 'I design and code beautifully simple things, and love what I do.'
+      const titleText = "Hi, I'm Abd Almalek Jakmery"
+      const subtitleText =
+        'Front-End Developer | Nuxt.js & Vue.js | Web Performance & UI/UX Specialist'
+      const descriptionText =
+        " I'm a Front-End Developer and Freelancer specializing in Nuxt.js, Vue.js, Vuetify, and TypeScript. I have a strong track record of transforming Figma designs into stunning digital experiences and building seamless, high-performance admin dashboards. My focus is always on delivering exceptional user experiences with clean, efficient, and scalable code. 🚀"
 
       await this.animateCharacters(titleText, 'title')
       await this.animateCharacters(subtitleText, 'subtitle')
@@ -99,7 +110,7 @@ export default {
       for (let i = 0; i < text.length; i++) {
         animatedText += text[i]
         this[prop] = animatedText
-        await this.delay(100) // تأخير قصير بين كل حرف
+        await this.delay(10) // تأخير قصير بين كل حرف
       }
     },
     delay(ms) {
@@ -107,7 +118,6 @@ export default {
     },
     handleButtonClick() {
       console.log('Button clicked!')
-      // أداء أي إجراءات إضافية هنا
     },
     DownloadCv() {
       const pdfUrl = '/cv.pdf'
@@ -171,18 +181,22 @@ export default {
 }
 
 .home__title {
-  font-size: var(--biggest-font-size);
+  /* font-size: var(--biggest-font-size); */
+  font-size: 3.5rem;
 }
 
 .home__subtitle {
   font-size: var(--h3-font-size);
   font-weight: var(--font-meidum);
   margin-bottom: var(--mb-0-75);
+  color: var(--skin-color);
 }
 
 .home__description {
-  max-width: 450px;
+  max-width: 900px;
   margin-bottom: var(--mb-2);
+  font-size: var(--normal-font-size);
+  text-align: justify;
 }
 
 .my__info {

@@ -2,51 +2,52 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap'); */
 :root {
   /* HSL Color Mod */
-  --hue-color:242;
-  --skin-color:#e1094a;
-  --title-color:hsl(var(--hue-color),8%,95%);
-  --text-color:hsl(var(--hue-color),8%,85%);
-  --body-color:hsl(var(--hue-color),19%,5%);
-  --box-color:hsl(var(--hue-color),14%,10%);
-  --scroll-bar-color:hsl(var(--hue-color),12%,38%);
-  --scroll-thumb-color:hsl(var(--hue-color),12%,26%);
+  --hue-color: 242;
+  --skin-color: #e1094a;
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 85%);
+  --body-color: hsl(var(--hue-color), 19%, 5%);
+  --box-color: hsl(var(--hue-color), 14%, 10%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
   /* -- font and typogrophy */
-  --body-font:'Poppins', 'sans-serif';
+  --body-font: 'Poppins', 'sans-serif';
   /* 5rem=8px , 1rem=16px 1.5rem=24px */
-  --biggest-font-size:3rem;
-  --h1-font-size:3rem;
-  --h2-font-size:2.25rem;
-  --h3-font-size:1.5rem;
-  --normal-font-size:1.5rem;
-  --saml-font-size:.825rem;
-  --smaller-font-size:.813rem;
+  --biggest-font-size: 3rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.25rem;
+  --h3-font-size: 1.5rem;
 
-/* font wight */
-  --font-meidum:500;
-  --font-bold:600;
+  --normal-font-size: 1.5rem;
+  --saml-font-size: 0.825rem;
+  --smaller-font-size: 0.813rem;
+
+  /* font wight */
+  --font-meidum: 500;
+  --font-bold: 600;
 
   /* margenes Botton */
-  --mb-0-25:.25rem;
-  --mb-0-5:.5rem;
-  --mb-0-75:.75rem;
-  --mb-1:1rem;
-  --mb-1-5:1.5rem;
-  --mb-2:2rem;
-  --mb-2-5:2.5rem;
-  --mb-3:3rem;
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
 
   /* Z Index */
-  --z-fixed:1;
-  --z-modal:100;
+  --z-fixed: 1;
+  --z-modal: 100;
 }
 @media screen and (max-width: 1024px) {
-  :root{
-      --biggest-font-size:2rem;
-      --h1-font-size:1.5rem;
-      --h2-font-size:1.25rem;
-      --h3-font-size:1.125rem;
-      --normal-font-size:.938rem;
-      --saml-font-size:.813rem;
-      --smaller-font-size:.75rem;
+  :root {
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 0.938rem;
+    --saml-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
   }
 }
