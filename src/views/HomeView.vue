@@ -126,7 +126,7 @@ export default {
       console.log('Button clicked!')
     },
     DownloadCv() {
-      const pdfUrl = '/cv.pdf'
+      const pdfUrl = '/Frontend_Developer_AbdAlmalik_Jakmery.pdf'
       const link = document.createElement('a')
       link.href = pdfUrl
       link.download = 'Abd_Almalik_Jakmery_CV.pdf' // اسم الملف بعد التنزيل
