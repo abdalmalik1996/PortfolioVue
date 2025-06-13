@@ -1,7 +1,7 @@
 <template>
   <section class="home" id="home">
-    <div class="bac-image"></div>
-    <div class="home__container container grid">
+    <!-- <div class="bac-image"></div> -->
+    <div class="home__container container">
       <!-- <div class="home__social">
         <span class="home__social-follow">Follow ME</span>
         <div class="home__social-links">
@@ -142,22 +142,18 @@ export default {
 .home {
   background-size: cover;
   background-position: center center;
-  height: 100vh;
 }
-.bac-image {
-}
+
 .home__container {
-  position: relative;
-  height: 100%;
-  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
 }
 .home__social {
-  position: absolute;
-  top: 1.8rem;
-  left: 0;
   display: flex;
   align-items: center;
-  column-gap: 3.5rem; /*?????????*/
 }
 .home__social-follow {
   font-weight: var(--font-meidum);
@@ -189,6 +185,8 @@ export default {
 .home__title {
   /* font-size: var(--biggest-font-size); */
   font-size: 3.5rem;
+  line-height: 1.2;
+  width: 100%;
 }
 
 .home__subtitle {
@@ -207,10 +205,8 @@ export default {
 
 .my__info {
   display: flex;
-  column-gap: 1.8rem; /*????????? */
   position: absolute;
-  left: 0;
-  bottom: 1.8rem;
+  bottom: 20px;
 }
 
 .info__item {
@@ -238,13 +234,12 @@ export default {
     /* height: initial; */
     background-position: 70%;
     align-items: initial;
-    padding: 5rem 0 2rem;
+    /* padding: 5rem 0 2rem; */
   }
   .home__container {
     grid-template-columns: repeat(2, 1fr);
   }
   .home__data {
-    width: 350px;
     line-height: 2;
   }
 
@@ -281,6 +276,9 @@ export default {
   .button {
     padding: 0.25rem 0.9rem;
   }
+  .home__title {
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 350px) {
   .home__img {
@@ -289,6 +287,7 @@ export default {
   }
   .home__title {
     font-size: var(--h1-font-size);
+    width: 100%;
   }
   .home__subtitle {
     font-size: var(--normal-font-size);
