@@ -22,15 +22,33 @@ import vuetify from '@/assets/icons/vuetify.svg'
 import webdor from '@/assets/images/webdor.png'
 import webdorScrol from '@/assets/images/webdorScrol.jpeg'
 import Archiade from '@/assets/images/Archiade.png'
-import Moonlight from '@/assets/images/Moonlight.png'
+// import Moonlight from '@/assets/images/Moonlight.png'
 import ArchiadeScrol from '@/assets/images/ArchiadeScrol.jpeg'
-import MoonlightScrol from '@/assets/images/MoonlightScrol.jpeg'
+// import MoonlightScrol from '@/assets/images/MoonlightScrol.jpeg'
 import gosunnex from '@/assets/images/gosunnex.png'
 import PresentlyAgency from '@/assets/images/PresentlyAgency.png'
 import goSunnexScrol from '@/assets/images/goSunnexScrol.jpeg'
 import AlMUDEER from '@/assets/images/AlMUDEER.png'
+import Elections from '@/assets/images/Elections.png'
+import awardShj from '@/assets/images/awardShj.png'
 export const data = {
   work: [
+    {
+      img: Elections,
+      title: 'The Higher Committee for the Elections of the People’s Assembly in syira',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
+      description:
+        'A responsive and interactive website, with a front-end developed using modern Front-End Development technologies to ensure a seamless user experience across all devices and screen sizes.',
+      link: 'https://hcepa.gov.sy/'
+    },
+    {
+      img: awardShj,
+      title: 'Sharjah award for educational excellence',
+      technologies: ['html', 'css', 'js', 'vue', 'Vuetify', 'api'],
+      description:
+        'A responsive and interactive website, with a front-end developed using modern Front-End Development technologies to ensure a seamless user experience across all devices and screen sizes.',
+      link: 'https://award.shj.ae/'
+    },
     {
       img: PresentlyAgency,
       title: 'Presently Agency',
@@ -38,6 +56,7 @@ export const data = {
       description: 'website Advertising agency',
       link: 'https://presently-agency.com/'
     },
+
     {
       img: gosunnex,
       imgscrol: goSunnexScrol,
