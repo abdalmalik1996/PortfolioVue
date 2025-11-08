@@ -4,6 +4,7 @@
     @mousemove="handleMouseMove"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
+    @click="$emit('click')"
     ref="card"
   >
     <div class="card" :style="cardStyle">
@@ -15,7 +16,7 @@
 <script setup>
 import { ref, computed, onMounted, nextTick } from 'vue'
 
-const props = defineProps(['dataImage'])
+// const props = defineProps(['dataImage'])
 
 const card = ref(null)
 const width = ref(0)
@@ -42,20 +43,20 @@ const cardStyle = computed(() => {
   }
 })
 
-const cardBgTransform = computed(() => {
-  const tX = mousePX.value * -50
-  const tY = mousePY.value * -50
-  return {
-    transform: `translateX(${tX}px) translateY(${tY}px)`,
-    transition: 'transform 0.1s'
-  }
-})
+// const cardBgTransform = computed(() => {
+//   const tX = mousePX.value * -50
+//   const tY = mousePY.value * -50
+//   return {
+//     transform: `translateX(${tX}px) translateY(${tY}px)`,
+//     transition: 'transform 0.1s'
+//   }
+// })
 
-const cardBgImage = computed(() => ({
-  backgroundImage: `url(${props.dataImage})`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center'
-}))
+// const cardBgImage = computed(() => ({
+//   backgroundImage: `url(${props.dataImage})`,
+//   backgroundSize: 'cover',
+//   backgroundPosition: 'center'
+// }))
 
 const handleMouseMove = (e) => {
   mouseX.value = e.pageX - card.value.offsetLeft - width.value / 2
@@ -72,6 +73,7 @@ const handleMouseLeave = () => {
     mouseY.value = 0
   }, 500)
 }
+defineEmits(['click'])
 </script>
 
 <style scoped>

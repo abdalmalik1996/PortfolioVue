@@ -3,8 +3,8 @@
     <h2 data-heading="My ProtFolio" class="section__title">Recent Works</h2>
 
     <div class="work__container container grid">
-      <CardParallaxDepth v-for="(card, index) in work" :key="index">
-        <workCard @click="hanlder(card)" :card="card"> </workCard>
+      <CardParallaxDepth v-for="(card, index) in work" :key="index" @click="hanlder(card)">
+        <workCard :card="card"> </workCard>
       </CardParallaxDepth>
 
       <transition
